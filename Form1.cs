@@ -60,7 +60,7 @@ namespace SistemaPI
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-
+        
         }
 
     }
