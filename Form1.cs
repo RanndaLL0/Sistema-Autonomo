@@ -97,11 +97,11 @@ namespace SistemaPI
             label3.Text = data;
 
             string retorno = Jogo.ListarJogadores(idPartida);
-            if (retorno.Substring(0, 4) == "ERRO")
-            {
-                MessageBox.Show("Ocorreu um erro: " + retorno, "Erro",MessageBoxButtons.OK,MessageBoxIcon.Error);
-                return;
-            }
+            //if (retorno == null)
+            //{
+                //MessageBox.Show("Ocorreu um erro: " + retorno, "Erro",MessageBoxButtons.OK,MessageBoxIcon.Error);
+              //   return;
+            //}
 
             retorno = retorno.Replace("\r", "");
             string[] jogadores = retorno.Split('\n');
