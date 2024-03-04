@@ -28,7 +28,7 @@ namespace SistemaPI
 
         }
 
-        //Forms position
+        //posicao do forms
 
         private void MouseDown(object sender, MouseEventArgs e)
         {
@@ -45,10 +45,7 @@ namespace SistemaPI
             }
         }
 
-        private void panel1_MouseMove(object sender, MouseEventArgs e)
-        {
-
-        }
+        //fechar,maximizar,minimizar tela
 
         private void btnMaximize_Click(object sender, EventArgs e)
         {
@@ -62,8 +59,10 @@ namespace SistemaPI
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-        
+            this.Close();
         }
+
+        //listar partidas
 
         private void btn_listar_Click(object sender, EventArgs e)
         {
@@ -80,7 +79,9 @@ namespace SistemaPI
                 }
         }
 
-        private void lstPartidas_SelectedIndexChanged(object sender, EventArgs e)
+        //listar Jogadores
+
+        private void lstJogadores_SelectedIndexChanged(object sender, EventArgs e)
         {
             lstJogadores.Items.Clear();
 
@@ -109,6 +110,18 @@ namespace SistemaPI
             {
               lstJogadores.Items.Add(jogadores[i]);
             }
+
+        }
+
+        private void btnCriarPrt_Click(object sender, EventArgs e)
+        {
+            string nomePrt = txtNomePrt.Text;
+            string senha = txtSenha.Text;
+            Jogo.CriarPartida(nomePrt,senha,nomePrt);
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
 
         }
     }
