@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MagicTrickServer;
 
 namespace SistemaPI
 {
@@ -17,6 +18,7 @@ namespace SistemaPI
         public Form1()
         {
             InitializeComponent();
+            lblVersao.Text = Jogo.Versao;
         }
 
         //Header
@@ -63,5 +65,51 @@ namespace SistemaPI
         
         }
 
+        private void btn_listar_Click(object sender, EventArgs e)
+        {
+            lstPartidas.Items.Clear();
+
+                string retorno = Jogo.ListarPartidas("T");
+                retorno = retorno.Replace("\r", "");
+                retorno = retorno.Substring(0, retorno.Length - 1);
+                string[] partidas = retorno.Split('\n');
+
+                for (int i = 0; i < partidas.Length - 1; i++)
+                {
+                    lstPartidas.Items.Add(partidas[i]);
+                }
+        }
+
+        private void lstPartidas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lstJogadores.Items.Clear();
+
+            string partida = lstPartidas.SelectedItem.ToString();
+            string[] dadosPartidas = partida.Split(',');
+
+            int idPartida = int.Parse(dadosPartidas[0]);
+            string nomePartida = dadosPartidas[1];
+            string data = dadosPartidas[2];
+
+            label1.Text = dadosPartidas[0].ToString();
+            label2.Text = nomePartida;
+            label3.Text = data;
+
+            string retorno = Jogo.ListarJogadores(idPartida);
+            if (retorno.Substring(0, 4) == "ERRO")
+            {
+                MessageBox.Show("Ocorreu um erro: " + retorno, "Erro",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                return;
+            }
+
+            retorno = retorno.Replace("\r", "");
+            string[] jogadores = retorno.Split('\n');
+
+            for (int i = 0; i < jogadores.Length; i++)
+            {
+              lstJogadores.Items.Add(jogadores[i]);
+            }
+
+        }
     }
 }

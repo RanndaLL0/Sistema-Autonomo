@@ -8,3 +8,6 @@ C:\Users\Star\Projeto\SistemaPI\obj\Debug\SistemaPI.csproj.GenerateResource.cach
 C:\Users\Star\Projeto\SistemaPI\obj\Debug\SistemaPI.csproj.CoreCompileInputs.cache
 C:\Users\Star\Projeto\SistemaPI\obj\Debug\SistemaPI.exe
 C:\Users\Star\Projeto\SistemaPI\obj\Debug\SistemaPI.pdb
+C:\Users\Star\Projeto\SistemaPI\bin\Debug\MagicTrickServer.dll
+C:\Users\Star\Projeto\SistemaPI\bin\Debug\MagicTrickServer.xml
+C:\Users\Star\Projeto\SistemaPI\obj\Debug\SistemaPI.csproj.Up2Date
