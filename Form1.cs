@@ -73,7 +73,7 @@ namespace SistemaPI
                 retorno = retorno.Substring(0, retorno.Length - 1);
                 string[] partidas = retorno.Split('\n');
 
-                for (int i = 0; i < partidas.Length - 1; i++)
+                for (int i = 0; i < partidas.Length; i++)
                 {
                     lstPartidas.Items.Add(partidas[i]);
                 }
@@ -95,13 +95,14 @@ namespace SistemaPI
             label1.Text = dadosPartidas[0].ToString();
             label2.Text = nomePartida;
             label3.Text = data;
+            txtID.Text = idPartida.ToString();
 
             string retorno = Jogo.ListarJogadores(idPartida);
-            //if (retorno == null)
-            //{
-                //MessageBox.Show("Ocorreu um erro: " + retorno, "Erro",MessageBoxButtons.OK,MessageBoxIcon.Error);
-              //   return;
-            //}
+            if (retorno == "")
+            {
+                lstJogadores.Items.Add("Sem Jogadores");
+                 return;
+            }
 
             retorno = retorno.Replace("\r", "");
             string[] jogadores = retorno.Split('\n');
@@ -113,15 +114,66 @@ namespace SistemaPI
 
         }
 
+        //Criar Partida
+
         private void btnCriarPrt_Click(object sender, EventArgs e)
         {
             string nomePrt = txtNomePrt.Text;
             string senha = txtSenha.Text;
-            Jogo.CriarPartida(nomePrt,senha,nomePrt);
+
+            if(nomePrt == "" || senha == "")
+            {
+                MessageBox.Show("Ocorreu um erro: valores invalidos para a criação", "Valor Invalido", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            string teste = Jogo.CriarPartida(nomePrt,senha,nomePrt);
+            if(teste == "ERRO: Nome da partida com caracteres especiais")
+            {
+                MessageBox.Show("Ocorreu um erro: Nome da partida com caracteres especiais", "Valor Invalido", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnEntrarPartida_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(txtID.Text);
+            string jogador = txtJogador.Text;
+            string senha = txtSenha.Text;
+
+            if(id == 0 || senha == "" || jogador == "")
+            {
+               MessageBox.Show("Ocorreu um erro: Valores invalidos para entrar na partida", "Valor Invalido", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string retorno = Jogo.EntrarPartida(id, jogador, senha);
+            retorno = retorno.Replace("\r","");
+            retorno = retorno.Replace("\n", "");
+
+            string[] infoJogador = retorno.Split(',');
+            string idJogador = infoJogador[0];
+            string senhaJogador = infoJogador[1];
+            txtidJogador.Text = idJogador;
+            txtsenhaJogador.Text = senhaJogador;
+
+        }
+
+        private void btnIniciar_Click(object sender, EventArgs e)
+        {
+            if(txtidJogador.Text == "" || txtsenhaJogador.Text == "")
+            {
+                MessageBox.Show("Ocorreu um erro: Valores invalidos para criação na partida", "Valor Invalido", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            string senhaJogador = txtsenhaJogador.Text;
+            int idJogador = int.Parse(txtidJogador.Text);
+            string sorteado = Jogo.IniciarPartida(idJogador, senhaJogador);
+            lblidSorteado.Visible = true;
+            lblidSorteado.Text = sorteado;
 
         }
     }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
@@ -44,7 +45,21 @@
             this.lblSenha = new System.Windows.Forms.Label();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.btnCriarPrt = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblJogador = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblID = new System.Windows.Forms.Label();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.txtJogador = new System.Windows.Forms.TextBox();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.btnEntrarPartida = new System.Windows.Forms.Button();
+            this.lblidSorteado = new System.Windows.Forms.Label();
+            this.lblJogadorID = new System.Windows.Forms.Label();
+            this.lblJogadorSenha = new System.Windows.Forms.Label();
+            this.txtidJogador = new System.Windows.Forms.TextBox();
+            this.txtsenhaJogador = new System.Windows.Forms.TextBox();
+            this.btnIniciar = new System.Windows.Forms.Button();
+            this.lblSorteado = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -121,8 +136,8 @@
             // 
             this.lstPartidas.FormattingEnabled = true;
             this.lstPartidas.Location = new System.Drawing.Point(12, 66);
-            this.lstPartidas.Name = "lstJogadores";
-            this.lstPartidas.Size = new System.Drawing.Size(180, 225);
+            this.lstPartidas.Name = "lstPartidas";
+            this.lstPartidas.Size = new System.Drawing.Size(191, 160);
             this.lstPartidas.TabIndex = 6;
             this.lstPartidas.SelectedIndexChanged += new System.EventHandler(this.lstJogadores_SelectedIndexChanged);
             // 
@@ -130,7 +145,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(12, 294);
+            this.label1.Location = new System.Drawing.Point(3, 233);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 7;
@@ -140,7 +155,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(53, 294);
+            this.label2.Location = new System.Drawing.Point(44, 233);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 8;
@@ -151,7 +166,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(157, 294);
+            this.label3.Location = new System.Drawing.Point(132, 233);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 9;
@@ -160,26 +175,26 @@
             // 
             // lstJogadores
             // 
-            this.lstJogadores.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lstJogadores.FormattingEnabled = true;
-            this.lstJogadores.Location = new System.Drawing.Point(221, 120);
+            this.lstJogadores.Location = new System.Drawing.Point(263, 89);
             this.lstJogadores.Name = "lstJogadores";
-            this.lstJogadores.Size = new System.Drawing.Size(146, 134);
-            this.lstJogadores.TabIndex = 10;
+            this.lstJogadores.Size = new System.Drawing.Size(132, 108);
+            this.lstJogadores.TabIndex = 20;
             // 
             // lblVersao
             // 
+            this.lblVersao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblVersao.AutoSize = true;
+            this.lblVersao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVersao.ForeColor = System.Drawing.Color.Black;
-            this.lblVersao.Location = new System.Drawing.Point(684, 452);
+            this.lblVersao.Location = new System.Drawing.Point(684, 450);
             this.lblVersao.Name = "lblVersao";
-            this.lblVersao.Size = new System.Drawing.Size(35, 13);
+            this.lblVersao.Size = new System.Drawing.Size(41, 15);
             this.lblVersao.TabIndex = 11;
             this.lblVersao.Text = "label4";
             // 
             // txtNomePrt
             // 
-            this.txtNomePrt.Location = new System.Drawing.Point(12, 333);
+            this.txtNomePrt.Location = new System.Drawing.Point(3, 269);
             this.txtNomePrt.Name = "txtNomePrt";
             this.txtNomePrt.Size = new System.Drawing.Size(110, 20);
             this.txtNomePrt.TabIndex = 14;
@@ -189,8 +204,8 @@
             this.lblNomeDaPartida.AutoSize = true;
             this.lblNomeDaPartida.BackColor = System.Drawing.Color.Transparent;
             this.lblNomeDaPartida.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomeDaPartida.ForeColor = System.Drawing.Color.Lime;
-            this.lblNomeDaPartida.Location = new System.Drawing.Point(12, 314);
+            this.lblNomeDaPartida.ForeColor = System.Drawing.Color.White;
+            this.lblNomeDaPartida.Location = new System.Drawing.Point(3, 250);
             this.lblNomeDaPartida.Name = "lblNomeDaPartida";
             this.lblNomeDaPartida.Size = new System.Drawing.Size(108, 16);
             this.lblNomeDaPartida.TabIndex = 13;
@@ -201,8 +216,8 @@
             this.lblSenha.AutoSize = true;
             this.lblSenha.BackColor = System.Drawing.Color.Transparent;
             this.lblSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenha.ForeColor = System.Drawing.Color.Lime;
-            this.lblSenha.Location = new System.Drawing.Point(12, 356);
+            this.lblSenha.ForeColor = System.Drawing.Color.White;
+            this.lblSenha.Location = new System.Drawing.Point(3, 292);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(46, 16);
             this.lblSenha.TabIndex = 15;
@@ -210,7 +225,7 @@
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(64, 356);
+            this.txtSenha.Location = new System.Drawing.Point(55, 292);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(58, 20);
             this.txtSenha.TabIndex = 16;
@@ -219,25 +234,162 @@
             // 
             this.btnCriarPrt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCriarPrt.ForeColor = System.Drawing.Color.Black;
-            this.btnCriarPrt.Location = new System.Drawing.Point(128, 333);
+            this.btnCriarPrt.Location = new System.Drawing.Point(119, 269);
             this.btnCriarPrt.Name = "btnCriarPrt";
-            this.btnCriarPrt.Size = new System.Drawing.Size(93, 23);
+            this.btnCriarPrt.Size = new System.Drawing.Size(75, 23);
             this.btnCriarPrt.TabIndex = 17;
             this.btnCriarPrt.Text = "Criar Partida";
             this.btnCriarPrt.UseVisualStyleBackColor = true;
             this.btnCriarPrt.Click += new System.EventHandler(this.btnCriarPrt_Click);
             // 
-            // label4
+            // lblJogador
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Lime;
-            this.label4.Location = new System.Drawing.Point(218, 101);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 16);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "Lista de Jogadores";
+            this.lblJogador.AutoSize = true;
+            this.lblJogador.BackColor = System.Drawing.Color.Transparent;
+            this.lblJogador.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJogador.ForeColor = System.Drawing.Color.White;
+            this.lblJogador.Location = new System.Drawing.Point(260, 70);
+            this.lblJogador.Name = "lblJogador";
+            this.lblJogador.Size = new System.Drawing.Size(123, 16);
+            this.lblJogador.TabIndex = 18;
+            this.lblJogador.Text = "Lista de Jogadores";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(586, 450);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(66, 15);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "Budapeste";
+            // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.BackColor = System.Drawing.Color.Transparent;
+            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblID.ForeColor = System.Drawing.Color.White;
+            this.lblID.Location = new System.Drawing.Point(260, 42);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(89, 16);
+            this.lblID.TabIndex = 21;
+            this.lblID.Text = "Id da Partida: ";
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(358, 41);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(43, 20);
+            this.txtID.TabIndex = 23;
+            // 
+            // txtJogador
+            // 
+            this.txtJogador.Location = new System.Drawing.Point(263, 219);
+            this.txtJogador.Name = "txtJogador";
+            this.txtJogador.Size = new System.Drawing.Size(132, 20);
+            this.txtJogador.TabIndex = 24;
+            // 
+            // lblNome
+            // 
+            this.lblNome.AutoSize = true;
+            this.lblNome.BackColor = System.Drawing.Color.Transparent;
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Location = new System.Drawing.Point(272, 203);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(117, 16);
+            this.lblNome.TabIndex = 25;
+            this.lblNome.Text = "Nome do Jogador";
+            // 
+            // btnEntrarPartida
+            // 
+            this.btnEntrarPartida.ForeColor = System.Drawing.Color.Black;
+            this.btnEntrarPartida.Location = new System.Drawing.Point(263, 245);
+            this.btnEntrarPartida.Name = "btnEntrarPartida";
+            this.btnEntrarPartida.Size = new System.Drawing.Size(104, 23);
+            this.btnEntrarPartida.TabIndex = 26;
+            this.btnEntrarPartida.Text = "Entrar na partida";
+            this.btnEntrarPartida.UseVisualStyleBackColor = true;
+            this.btnEntrarPartida.Click += new System.EventHandler(this.btnEntrarPartida_Click);
+            // 
+            // lblidSorteado
+            // 
+            this.lblidSorteado.AutoSize = true;
+            this.lblidSorteado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblidSorteado.ForeColor = System.Drawing.Color.Black;
+            this.lblidSorteado.Location = new System.Drawing.Point(341, 411);
+            this.lblidSorteado.Name = "lblidSorteado";
+            this.lblidSorteado.Size = new System.Drawing.Size(41, 15);
+            this.lblidSorteado.TabIndex = 27;
+            this.lblidSorteado.Text = "label4";
+            this.lblidSorteado.Visible = false;
+            // 
+            // lblJogadorID
+            // 
+            this.lblJogadorID.AutoSize = true;
+            this.lblJogadorID.BackColor = System.Drawing.Color.Transparent;
+            this.lblJogadorID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJogadorID.ForeColor = System.Drawing.Color.Transparent;
+            this.lblJogadorID.Location = new System.Drawing.Point(212, 308);
+            this.lblJogadorID.Name = "lblJogadorID";
+            this.lblJogadorID.Size = new System.Drawing.Size(91, 16);
+            this.lblJogadorID.TabIndex = 29;
+            this.lblJogadorID.Text = "Id do Jogador";
+            // 
+            // lblJogadorSenha
+            // 
+            this.lblJogadorSenha.AutoSize = true;
+            this.lblJogadorSenha.BackColor = System.Drawing.Color.Transparent;
+            this.lblJogadorSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJogadorSenha.ForeColor = System.Drawing.Color.Transparent;
+            this.lblJogadorSenha.Location = new System.Drawing.Point(320, 308);
+            this.lblJogadorSenha.Name = "lblJogadorSenha";
+            this.lblJogadorSenha.Size = new System.Drawing.Size(119, 16);
+            this.lblJogadorSenha.TabIndex = 30;
+            this.lblJogadorSenha.Text = "Senha do Jogador";
+            // 
+            // txtidJogador
+            // 
+            this.txtidJogador.Location = new System.Drawing.Point(227, 327);
+            this.txtidJogador.Name = "txtidJogador";
+            this.txtidJogador.Size = new System.Drawing.Size(88, 20);
+            this.txtidJogador.TabIndex = 31;
+            // 
+            // txtsenhaJogador
+            // 
+            this.txtsenhaJogador.Location = new System.Drawing.Point(346, 327);
+            this.txtsenhaJogador.Name = "txtsenhaJogador";
+            this.txtsenhaJogador.Size = new System.Drawing.Size(88, 20);
+            this.txtsenhaJogador.TabIndex = 32;
+            // 
+            // btnIniciar
+            // 
+            this.btnIniciar.ForeColor = System.Drawing.Color.Black;
+            this.btnIniciar.Location = new System.Drawing.Point(286, 364);
+            this.btnIniciar.Name = "btnIniciar";
+            this.btnIniciar.Size = new System.Drawing.Size(91, 23);
+            this.btnIniciar.TabIndex = 33;
+            this.btnIniciar.Text = "Iniciar Partida";
+            this.btnIniciar.UseVisualStyleBackColor = true;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
+            // 
+            // lblSorteado
+            // 
+            this.lblSorteado.AutoSize = true;
+            this.lblSorteado.BackColor = System.Drawing.Color.Transparent;
+            this.lblSorteado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSorteado.ForeColor = System.Drawing.Color.White;
+            this.lblSorteado.Location = new System.Drawing.Point(212, 410);
+            this.lblSorteado.Name = "lblSorteado";
+            this.lblSorteado.Size = new System.Drawing.Size(123, 16);
+            this.lblSorteado.TabIndex = 34;
+            this.lblSorteado.Text = "Jogador Sorteado: ";
             // 
             // Form1
             // 
@@ -246,7 +398,20 @@
             this.BackgroundImage = global::SistemaPI.Properties.Resources.D_D_Forest;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(753, 496);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblSorteado);
+            this.Controls.Add(this.btnIniciar);
+            this.Controls.Add(this.txtsenhaJogador);
+            this.Controls.Add(this.txtidJogador);
+            this.Controls.Add(this.lblJogadorSenha);
+            this.Controls.Add(this.lblJogadorID);
+            this.Controls.Add(this.lblidSorteado);
+            this.Controls.Add(this.btnEntrarPartida);
+            this.Controls.Add(this.lblNome);
+            this.Controls.Add(this.txtJogador);
+            this.Controls.Add(this.txtID);
+            this.Controls.Add(this.lblID);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblJogador);
             this.Controls.Add(this.btnCriarPrt);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.lblSenha);
@@ -261,7 +426,7 @@
             this.Controls.Add(this.btn_listar);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.Gold;
+            this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
@@ -289,7 +454,21 @@
         private System.Windows.Forms.Label lblSenha;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Button btnCriarPrt;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblJogador;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblID;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.TextBox txtJogador;
+        private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.Button btnEntrarPartida;
+        private System.Windows.Forms.Label lblidSorteado;
+        private System.Windows.Forms.Label lblJogadorID;
+        private System.Windows.Forms.Label lblJogadorSenha;
+        private System.Windows.Forms.TextBox txtidJogador;
+        private System.Windows.Forms.TextBox txtsenhaJogador;
+        private System.Windows.Forms.Button btnIniciar;
+        private System.Windows.Forms.Label lblSorteado;
     }
 }
 
