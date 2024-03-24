@@ -176,5 +176,42 @@ namespace SistemaPI
             lblidSorteado.Text = sorteado;
 
         }
+
+        private void btnExibirMao_Click(object sender, EventArgs e)
+        {
+            int idPartida = int.Parse(txtID.Text);
+            string retorno = Jogo.ConsultarMao(idPartida);
+            retorno = retorno.Replace("\r", "");
+            string[] cartas = retorno.Split('\n');
+
+            for (int i = 0; i < cartas.Length; i++)
+            {
+                lstCartas.Items.Add(cartas[i]);
+            }
+        }
+
+        private void btnJogarCarta_Click(object sender, EventArgs e)
+        {
+            lstCartas.Items.Clear();
+
+            int idJogador = int.Parse(txtidJogador.Text);
+            string senhaJogador = txtsenhaJogador.Text;
+            int posicaoCartaJogada = int.Parse(txtIdCarta.Text);
+            lblValorCartaJogada.Visible = true;
+            lblValorCartaJogada.Text = Jogo.Jogar(idJogador, senhaJogador, posicaoCartaJogada);
+        }
+
+        private void btnApostar_Click(object sender, EventArgs e)
+        {
+            int idJogador = int.Parse(txtidJogador.Text);
+            string senhaJogador = txtsenhaJogador.Text;
+            int posicaoCartaJogada = int.Parse(txtIdCarta.Text);
+            lblValorCartaApostada.Visible = true;
+            lblValorCartaApostada.Text = Jogo.Apostar(idJogador, senhaJogador, posicaoCartaJogada);
+            
+
+        }
+
+
     }
 }

@@ -60,6 +60,16 @@
             this.txtsenhaJogador = new System.Windows.Forms.TextBox();
             this.btnIniciar = new System.Windows.Forms.Button();
             this.lblSorteado = new System.Windows.Forms.Label();
+            this.btnExibirMao = new System.Windows.Forms.Button();
+            this.lstCartas = new System.Windows.Forms.ListBox();
+            this.txtIdCarta = new System.Windows.Forms.TextBox();
+            this.lblCartaID = new System.Windows.Forms.Label();
+            this.btnJogarCarta = new System.Windows.Forms.Button();
+            this.btnApostar = new System.Windows.Forms.Button();
+            this.lblCartaJogada = new System.Windows.Forms.Label();
+            this.lblValorCartaJogada = new System.Windows.Forms.Label();
+            this.lblCartaApostada = new System.Windows.Forms.Label();
+            this.lblValorCartaApostada = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -323,7 +333,7 @@
             this.lblidSorteado.AutoSize = true;
             this.lblidSorteado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblidSorteado.ForeColor = System.Drawing.Color.Black;
-            this.lblidSorteado.Location = new System.Drawing.Point(341, 411);
+            this.lblidSorteado.Location = new System.Drawing.Point(132, 346);
             this.lblidSorteado.Name = "lblidSorteado";
             this.lblidSorteado.Size = new System.Drawing.Size(41, 15);
             this.lblidSorteado.TabIndex = 27;
@@ -336,7 +346,7 @@
             this.lblJogadorID.BackColor = System.Drawing.Color.Transparent;
             this.lblJogadorID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJogadorID.ForeColor = System.Drawing.Color.Transparent;
-            this.lblJogadorID.Location = new System.Drawing.Point(212, 308);
+            this.lblJogadorID.Location = new System.Drawing.Point(206, 296);
             this.lblJogadorID.Name = "lblJogadorID";
             this.lblJogadorID.Size = new System.Drawing.Size(91, 16);
             this.lblJogadorID.TabIndex = 29;
@@ -348,7 +358,7 @@
             this.lblJogadorSenha.BackColor = System.Drawing.Color.Transparent;
             this.lblJogadorSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJogadorSenha.ForeColor = System.Drawing.Color.Transparent;
-            this.lblJogadorSenha.Location = new System.Drawing.Point(320, 308);
+            this.lblJogadorSenha.Location = new System.Drawing.Point(315, 296);
             this.lblJogadorSenha.Name = "lblJogadorSenha";
             this.lblJogadorSenha.Size = new System.Drawing.Size(119, 16);
             this.lblJogadorSenha.TabIndex = 30;
@@ -356,14 +366,14 @@
             // 
             // txtidJogador
             // 
-            this.txtidJogador.Location = new System.Drawing.Point(227, 327);
+            this.txtidJogador.Location = new System.Drawing.Point(226, 315);
             this.txtidJogador.Name = "txtidJogador";
             this.txtidJogador.Size = new System.Drawing.Size(88, 20);
             this.txtidJogador.TabIndex = 31;
             // 
             // txtsenhaJogador
             // 
-            this.txtsenhaJogador.Location = new System.Drawing.Point(346, 327);
+            this.txtsenhaJogador.Location = new System.Drawing.Point(334, 315);
             this.txtsenhaJogador.Name = "txtsenhaJogador";
             this.txtsenhaJogador.Size = new System.Drawing.Size(88, 20);
             this.txtsenhaJogador.TabIndex = 32;
@@ -371,7 +381,7 @@
             // btnIniciar
             // 
             this.btnIniciar.ForeColor = System.Drawing.Color.Black;
-            this.btnIniciar.Location = new System.Drawing.Point(286, 364);
+            this.btnIniciar.Location = new System.Drawing.Point(442, 43);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(91, 23);
             this.btnIniciar.TabIndex = 33;
@@ -385,11 +395,118 @@
             this.lblSorteado.BackColor = System.Drawing.Color.Transparent;
             this.lblSorteado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSorteado.ForeColor = System.Drawing.Color.White;
-            this.lblSorteado.Location = new System.Drawing.Point(212, 410);
+            this.lblSorteado.Location = new System.Drawing.Point(3, 346);
             this.lblSorteado.Name = "lblSorteado";
             this.lblSorteado.Size = new System.Drawing.Size(123, 16);
             this.lblSorteado.TabIndex = 34;
             this.lblSorteado.Text = "Jogador Sorteado: ";
+            // 
+            // btnExibirMao
+            // 
+            this.btnExibirMao.Location = new System.Drawing.Point(560, 42);
+            this.btnExibirMao.Name = "btnExibirMao";
+            this.btnExibirMao.Size = new System.Drawing.Size(70, 24);
+            this.btnExibirMao.TabIndex = 35;
+            this.btnExibirMao.Text = "Exibir Mãos";
+            this.btnExibirMao.UseVisualStyleBackColor = true;
+            this.btnExibirMao.Click += new System.EventHandler(this.btnExibirMao_Click);
+            // 
+            // lstCartas
+            // 
+            this.lstCartas.FormattingEnabled = true;
+            this.lstCartas.Location = new System.Drawing.Point(459, 89);
+            this.lstCartas.Name = "lstCartas";
+            this.lstCartas.Size = new System.Drawing.Size(147, 329);
+            this.lstCartas.TabIndex = 36;
+            // 
+            // txtIdCarta
+            // 
+            this.txtIdCarta.Location = new System.Drawing.Point(281, 369);
+            this.txtIdCarta.Name = "txtIdCarta";
+            this.txtIdCarta.Size = new System.Drawing.Size(102, 20);
+            this.txtIdCarta.TabIndex = 37;
+            // 
+            // lblCartaID
+            // 
+            this.lblCartaID.AutoSize = true;
+            this.lblCartaID.BackColor = System.Drawing.Color.Transparent;
+            this.lblCartaID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCartaID.ForeColor = System.Drawing.Color.Transparent;
+            this.lblCartaID.Location = new System.Drawing.Point(295, 350);
+            this.lblCartaID.Name = "lblCartaID";
+            this.lblCartaID.Size = new System.Drawing.Size(72, 16);
+            this.lblCartaID.TabIndex = 38;
+            this.lblCartaID.Text = "Id da Carta";
+            // 
+            // btnJogarCarta
+            // 
+            this.btnJogarCarta.Location = new System.Drawing.Point(263, 395);
+            this.btnJogarCarta.Name = "btnJogarCarta";
+            this.btnJogarCarta.Size = new System.Drawing.Size(58, 24);
+            this.btnJogarCarta.TabIndex = 39;
+            this.btnJogarCarta.Text = "Jogar";
+            this.btnJogarCarta.UseVisualStyleBackColor = true;
+            this.btnJogarCarta.Click += new System.EventHandler(this.btnJogarCarta_Click);
+            // 
+            // btnApostar
+            // 
+            this.btnApostar.Location = new System.Drawing.Point(340, 394);
+            this.btnApostar.Name = "btnApostar";
+            this.btnApostar.Size = new System.Drawing.Size(55, 24);
+            this.btnApostar.TabIndex = 40;
+            this.btnApostar.Text = "Apostar";
+            this.btnApostar.UseVisualStyleBackColor = true;
+            this.btnApostar.Click += new System.EventHandler(this.btnApostar_Click);
+            // 
+            // lblCartaJogada
+            // 
+            this.lblCartaJogada.AutoSize = true;
+            this.lblCartaJogada.BackColor = System.Drawing.Color.Transparent;
+            this.lblCartaJogada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCartaJogada.ForeColor = System.Drawing.Color.White;
+            this.lblCartaJogada.Location = new System.Drawing.Point(206, 431);
+            this.lblCartaJogada.Name = "lblCartaJogada";
+            this.lblCartaJogada.Size = new System.Drawing.Size(143, 16);
+            this.lblCartaJogada.TabIndex = 41;
+            this.lblCartaJogada.Text = "Valor da carta jogada: ";
+            // 
+            // lblValorCartaJogada
+            // 
+            this.lblValorCartaJogada.AutoSize = true;
+            this.lblValorCartaJogada.BackColor = System.Drawing.Color.Transparent;
+            this.lblValorCartaJogada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorCartaJogada.ForeColor = System.Drawing.Color.Black;
+            this.lblValorCartaJogada.Location = new System.Drawing.Point(360, 431);
+            this.lblValorCartaJogada.Name = "lblValorCartaJogada";
+            this.lblValorCartaJogada.Size = new System.Drawing.Size(41, 15);
+            this.lblValorCartaJogada.TabIndex = 42;
+            this.lblValorCartaJogada.Text = "label4";
+            this.lblValorCartaJogada.Visible = false;
+            // 
+            // lblCartaApostada
+            // 
+            this.lblCartaApostada.AutoSize = true;
+            this.lblCartaApostada.BackColor = System.Drawing.Color.Transparent;
+            this.lblCartaApostada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCartaApostada.ForeColor = System.Drawing.Color.White;
+            this.lblCartaApostada.Location = new System.Drawing.Point(206, 459);
+            this.lblCartaApostada.Name = "lblCartaApostada";
+            this.lblCartaApostada.Size = new System.Drawing.Size(155, 16);
+            this.lblCartaApostada.TabIndex = 43;
+            this.lblCartaApostada.Text = "Valor da carta apostada:";
+            // 
+            // lblValorCartaApostada
+            // 
+            this.lblValorCartaApostada.AutoSize = true;
+            this.lblValorCartaApostada.BackColor = System.Drawing.Color.Transparent;
+            this.lblValorCartaApostada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorCartaApostada.ForeColor = System.Drawing.Color.Black;
+            this.lblValorCartaApostada.Location = new System.Drawing.Point(367, 460);
+            this.lblValorCartaApostada.Name = "lblValorCartaApostada";
+            this.lblValorCartaApostada.Size = new System.Drawing.Size(41, 15);
+            this.lblValorCartaApostada.TabIndex = 44;
+            this.lblValorCartaApostada.Text = "label4";
+            this.lblValorCartaApostada.Visible = false;
             // 
             // Form1
             // 
@@ -398,6 +515,16 @@
             this.BackgroundImage = global::SistemaPI.Properties.Resources.D_D_Forest;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(753, 496);
+            this.Controls.Add(this.lblValorCartaApostada);
+            this.Controls.Add(this.lblCartaApostada);
+            this.Controls.Add(this.lblValorCartaJogada);
+            this.Controls.Add(this.lblCartaJogada);
+            this.Controls.Add(this.btnApostar);
+            this.Controls.Add(this.btnJogarCarta);
+            this.Controls.Add(this.lblCartaID);
+            this.Controls.Add(this.txtIdCarta);
+            this.Controls.Add(this.lstCartas);
+            this.Controls.Add(this.btnExibirMao);
             this.Controls.Add(this.lblSorteado);
             this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.txtsenhaJogador);
@@ -426,7 +553,7 @@
             this.Controls.Add(this.btn_listar);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.White;
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
@@ -469,6 +596,16 @@
         private System.Windows.Forms.TextBox txtsenhaJogador;
         private System.Windows.Forms.Button btnIniciar;
         private System.Windows.Forms.Label lblSorteado;
+        private System.Windows.Forms.Button btnExibirMao;
+        private System.Windows.Forms.ListBox lstCartas;
+        private System.Windows.Forms.TextBox txtIdCarta;
+        private System.Windows.Forms.Label lblCartaID;
+        private System.Windows.Forms.Button btnJogarCarta;
+        private System.Windows.Forms.Button btnApostar;
+        private System.Windows.Forms.Label lblCartaJogada;
+        private System.Windows.Forms.Label lblValorCartaJogada;
+        private System.Windows.Forms.Label lblCartaApostada;
+        private System.Windows.Forms.Label lblValorCartaApostada;
     }
 }
 

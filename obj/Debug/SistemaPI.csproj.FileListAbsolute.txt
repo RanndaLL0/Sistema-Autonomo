@@ -11,3 +11,16 @@ C:\Users\Star\Projeto\SistemaPI\obj\Debug\SistemaPI.pdb
 C:\Users\Star\Projeto\SistemaPI\bin\Debug\MagicTrickServer.dll
 C:\Users\Star\Projeto\SistemaPI\bin\Debug\MagicTrickServer.xml
 C:\Users\Star\Projeto\SistemaPI\obj\Debug\SistemaPI.csproj.Up2Date
+C:\Users\gustavo vinicius\Desktop\Eduardo\teste\Sistema-Autonomo\bin\Debug\SistemaPI.exe.config
+C:\Users\gustavo vinicius\Desktop\Eduardo\teste\Sistema-Autonomo\bin\Debug\SistemaPI.exe
+C:\Users\gustavo vinicius\Desktop\Eduardo\teste\Sistema-Autonomo\bin\Debug\SistemaPI.pdb
+C:\Users\gustavo vinicius\Desktop\Eduardo\teste\Sistema-Autonomo\bin\Debug\MagicTrickServer.dll
+C:\Users\gustavo vinicius\Desktop\Eduardo\teste\Sistema-Autonomo\bin\Debug\MagicTrickServer.xml
+C:\Users\gustavo vinicius\Desktop\Eduardo\teste\Sistema-Autonomo\obj\Debug\SistemaPI.csproj.AssemblyReference.cache
+C:\Users\gustavo vinicius\Desktop\Eduardo\teste\Sistema-Autonomo\obj\Debug\SistemaPI.Form1.resources
+C:\Users\gustavo vinicius\Desktop\Eduardo\teste\Sistema-Autonomo\obj\Debug\SistemaPI.Properties.Resources.resources
+C:\Users\gustavo vinicius\Desktop\Eduardo\teste\Sistema-Autonomo\obj\Debug\SistemaPI.csproj.GenerateResource.cache
+C:\Users\gustavo vinicius\Desktop\Eduardo\teste\Sistema-Autonomo\obj\Debug\SistemaPI.csproj.CoreCompileInputs.cache
+C:\Users\gustavo vinicius\Desktop\Eduardo\teste\Sistema-Autonomo\obj\Debug\SistemaPI.csproj.Up2Date
+C:\Users\gustavo vinicius\Desktop\Eduardo\teste\Sistema-Autonomo\obj\Debug\SistemaPI.exe
+C:\Users\gustavo vinicius\Desktop\Eduardo\teste\Sistema-Autonomo\obj\Debug\SistemaPI.pdb
