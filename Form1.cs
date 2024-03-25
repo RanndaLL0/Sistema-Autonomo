@@ -179,6 +179,7 @@ namespace SistemaPI
 
         private void btnExibirMao_Click(object sender, EventArgs e)
         {
+            lstCartas.Items.Clear();
             int idPartida = int.Parse(txtID.Text);
             string retorno = Jogo.ConsultarMao(idPartida);
             retorno = retorno.Replace("\r", "");
@@ -207,8 +208,14 @@ namespace SistemaPI
             string senhaJogador = txtsenhaJogador.Text;
             int posicaoCartaJogada = int.Parse(txtIdCarta.Text);
             lblValorCartaApostada.Visible = true;
+            if (posicaoCartaJogada == 0)
+            {
+                lblValorCartaApostada.Text = "Sem aposta";
+            }
+            else 
+            {
             lblValorCartaApostada.Text = Jogo.Apostar(idJogador, senhaJogador, posicaoCartaJogada);
-            
+            }
 
         }
 

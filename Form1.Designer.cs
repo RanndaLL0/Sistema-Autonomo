@@ -473,7 +473,7 @@
             // lblValorCartaJogada
             // 
             this.lblValorCartaJogada.AutoSize = true;
-            this.lblValorCartaJogada.BackColor = System.Drawing.Color.Transparent;
+            this.lblValorCartaJogada.BackColor = System.Drawing.SystemColors.Control;
             this.lblValorCartaJogada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValorCartaJogada.ForeColor = System.Drawing.Color.Black;
             this.lblValorCartaJogada.Location = new System.Drawing.Point(360, 431);
@@ -498,7 +498,7 @@
             // lblValorCartaApostada
             // 
             this.lblValorCartaApostada.AutoSize = true;
-            this.lblValorCartaApostada.BackColor = System.Drawing.Color.Transparent;
+            this.lblValorCartaApostada.BackColor = System.Drawing.SystemColors.Control;
             this.lblValorCartaApostada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValorCartaApostada.ForeColor = System.Drawing.Color.Black;
             this.lblValorCartaApostada.Location = new System.Drawing.Point(367, 460);
