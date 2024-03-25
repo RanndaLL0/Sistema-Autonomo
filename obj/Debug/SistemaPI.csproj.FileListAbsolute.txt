@@ -24,3 +24,16 @@ C:\Users\gustavo vinicius\Desktop\Eduardo\teste\Sistema-Autonomo\obj\Debug\Siste
 C:\Users\gustavo vinicius\Desktop\Eduardo\teste\Sistema-Autonomo\obj\Debug\SistemaPI.csproj.Up2Date
 C:\Users\gustavo vinicius\Desktop\Eduardo\teste\Sistema-Autonomo\obj\Debug\SistemaPI.exe
 C:\Users\gustavo vinicius\Desktop\Eduardo\teste\Sistema-Autonomo\obj\Debug\SistemaPI.pdb
+C:\Users\ced40\OneDrive\Documentos\Sistema_Autonomo\Sistema-Autonomo\bin\Debug\SistemaPI.exe.config
+C:\Users\ced40\OneDrive\Documentos\Sistema_Autonomo\Sistema-Autonomo\bin\Debug\SistemaPI.exe
+C:\Users\ced40\OneDrive\Documentos\Sistema_Autonomo\Sistema-Autonomo\bin\Debug\SistemaPI.pdb
+C:\Users\ced40\OneDrive\Documentos\Sistema_Autonomo\Sistema-Autonomo\bin\Debug\MagicTrickServer.dll
+C:\Users\ced40\OneDrive\Documentos\Sistema_Autonomo\Sistema-Autonomo\bin\Debug\MagicTrickServer.xml
+C:\Users\ced40\OneDrive\Documentos\Sistema_Autonomo\Sistema-Autonomo\obj\Debug\SistemaPI.csproj.AssemblyReference.cache
+C:\Users\ced40\OneDrive\Documentos\Sistema_Autonomo\Sistema-Autonomo\obj\Debug\SistemaPI.Form1.resources
+C:\Users\ced40\OneDrive\Documentos\Sistema_Autonomo\Sistema-Autonomo\obj\Debug\SistemaPI.Properties.Resources.resources
+C:\Users\ced40\OneDrive\Documentos\Sistema_Autonomo\Sistema-Autonomo\obj\Debug\SistemaPI.csproj.GenerateResource.cache
+C:\Users\ced40\OneDrive\Documentos\Sistema_Autonomo\Sistema-Autonomo\obj\Debug\SistemaPI.csproj.CoreCompileInputs.cache
+C:\Users\ced40\OneDrive\Documentos\Sistema_Autonomo\Sistema-Autonomo\obj\Debug\SistemaPI.csproj.Up2Date
+C:\Users\ced40\OneDrive\Documentos\Sistema_Autonomo\Sistema-Autonomo\obj\Debug\SistemaPI.exe
+C:\Users\ced40\OneDrive\Documentos\Sistema_Autonomo\Sistema-Autonomo\obj\Debug\SistemaPI.pdb

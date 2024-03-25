@@ -140,17 +140,17 @@ namespace SistemaPI
 
         private void btnEntrarPartida_Click(object sender, EventArgs e)
         {
-            int id = int.Parse(txtID.Text);
+            string id = txtID.Text;
             string jogador = txtJogador.Text;
             string senha = txtSenha.Text;
 
-            if(id == 0 || senha == "" || jogador == "")
+            if(id == "" || senha == "" || jogador == "")
             {
                MessageBox.Show("Ocorreu um erro: Valores invalidos para entrar na partida", "Valor Invalido", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
-            string retorno = Jogo.EntrarPartida(id, jogador, senha);
+             
+            string retorno = Jogo.EntrarPartida(int.Parse(id), jogador, senha);
             retorno = retorno.Replace("\r","");
             retorno = retorno.Replace("\n", "");
 
@@ -194,16 +194,27 @@ namespace SistemaPI
         private void btnJogarCarta_Click(object sender, EventArgs e)
         {
             lstCartas.Items.Clear();
+            if(txtIdCarta.Text == "")
+            {
+                MessageBox.Show("Ocorreu um erro: Valores invalidos para jogar uma carta", "Valor Invalido", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             int idJogador = int.Parse(txtidJogador.Text);
             string senhaJogador = txtsenhaJogador.Text;
             int posicaoCartaJogada = int.Parse(txtIdCarta.Text);
             lblValorCartaJogada.Visible = true;
-            lblValorCartaJogada.Text = Jogo.Jogar(idJogador, senhaJogador, posicaoCartaJogada);
+            lblValorCartaJogada.Text = Jogo.Jogar(idJogador, senhaJogador, posicaoCartaJogada);              
         }
 
         private void btnApostar_Click(object sender, EventArgs e)
         {
+            if (txtIdCarta.Text == "")
+            {
+                MessageBox.Show("Ocorreu um erro: Valores invalidos para jogar uma carta", "Valor Invalido", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             int idJogador = int.Parse(txtidJogador.Text);
             string senhaJogador = txtsenhaJogador.Text;
             int posicaoCartaJogada = int.Parse(txtIdCarta.Text);
