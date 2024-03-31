@@ -189,6 +189,10 @@ namespace SistemaPI
             {
                 lstCartas.Items.Add(cartas[i]);
             }
+
+            Mao m = new Mao();
+            m.ShowDialog();
+
         }
 
         private void btnJogarCarta_Click(object sender, EventArgs e)
@@ -229,7 +233,5 @@ namespace SistemaPI
             }
 
         }
-
-
     }
 }
