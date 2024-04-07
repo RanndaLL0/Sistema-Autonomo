@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|solutionrelative:mesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|c:\\users\\star\\projeto\\sistemapi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|C:\\Users\\Star\\Projeto\\SistemaPI\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -52,9 +52,8 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T01:35:04.673Z",
-              "EditorCaption": " [Design]"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-04-07T01:35:04.673Z"
             },
             {
               "$type": "Document",
@@ -65,9 +64,8 @@
               "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAgwCUAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-06T21:07:23.49Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-04-06T21:07:23.49Z"
             },
             {
               "$type": "Document",
@@ -77,7 +75,7 @@
               "RelativeDocumentMoniker": "Mesa.cs",
               "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mesa.cs",
               "RelativeToolTip": "Mesa.cs",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAkwHQAAAAcAAAA",
+              "ViewState": "AQIAADUAAAAAAAAAAAAuwEgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-06T20:58:05.035Z",
               "EditorCaption": ""
@@ -117,8 +115,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T18:26:48.623Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-31T18:26:48.623Z"
             }
           ]
         }
