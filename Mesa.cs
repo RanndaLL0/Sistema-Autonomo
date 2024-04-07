@@ -15,10 +15,9 @@ namespace SistemaPI
 {
     public partial class panelCarta : Form
     {
-
-        public string[] Cartas { get; set; }
-        List<Panel> panels = new List<Panel>();
-        public int Id { get; set; }
+        public Point MouseLocation; ////Posição do Mouse
+        public string[] Cartas { get; set; } //Cartas da mesa
+        public int Id { get; set; } //Id da partida
 
         public panelCarta(string[] cartas,int id)
         {
@@ -26,6 +25,25 @@ namespace SistemaPI
             Id = id;
             InitializeComponent();
         }
+
+        //posicao do forms
+
+        private void MouseDown(object sender, MouseEventArgs e)
+        {
+            MouseLocation = new Point(-e.X, -e.Y);
+        }
+
+        private void MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                Point mousePose = MousePosition;
+                mousePose.Offset(MouseLocation.X, MouseLocation.Y);
+                Location = mousePose;
+            }
+        }
+
+        //Botoes do cabeçalho
 
         private void btnClose_Click(object sender, EventArgs e)
         {
@@ -74,16 +92,19 @@ namespace SistemaPI
             {
                 if(c is Panel)
                 {
-                    Controls.Remove(c);
-                    c.Dispose();
+                    if(c != pnlHeader)
+                    {
+                        Controls.Remove(c);
+                        c.Dispose();
+                    }
                 }
             }
 
             int nJogadores = Njogadores();
 
             //Posição inicial das cartas
-            int x = 100;
-            int y = 100;
+            int x = 250;
+            int y = 520;
             int count = 0;
             for(int i = 0; i < Cartas.Length - 1; i++)
             {
@@ -92,26 +113,35 @@ namespace SistemaPI
                 
                 if(nJogadores == 2 && count == 6)
                 {
-                    x = 800;
-                    y = 400;
+                    x = 250;
+                    y = 620;
                 }
-                else if(nJogadores > 2 && count == 7)
+                else if(nJogadores == 2 && count == 12)
                 {
-                    //x = 
-                    //y = 
+                    x = 250;
+                    y = 150;
+                }
+                else if(nJogadores == 2 && count == 18)
+                {
+                    x = 250;
+                    y = 50;
                 }
                 imgCarta(carta, auxCarta[2]);
-                carta.Height = 137;
-                carta.Width = 91;
+                carta.Height = 70;
+                carta.Width = 61;
                 carta.Left = x;
                 carta.Top = y;
 
                 count++;
                 carta.BackgroundImageLayout = ImageLayout.Stretch;
                 this.Controls.Add(carta);
-                x += 97;
+                x += 69;
             }
         }
 
+        private void pnlHeader_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

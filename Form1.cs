@@ -126,7 +126,7 @@ namespace SistemaPI
                 MessageBox.Show("Ocorreu um erro: valores invalidos para a criação", "Valor Invalido", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            string teste = Jogo.CriarPartida(nomePrt,senha,nomePrt);
+            string teste = Jogo.CriarPartida(nomePrt,senha,"Budapeste");
             if(teste == "ERRO: Nome da partida com caracteres especiais")
             {
                 MessageBox.Show("Ocorreu um erro: Nome da partida com caracteres especiais", "Valor Invalido", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -193,7 +193,6 @@ namespace SistemaPI
             panelCarta M = new panelCarta(cartas, idPartida);
             M.ExibirMao();
             M.ShowDialog();
-
         }
 
         private void btnJogarCarta_Click(object sender, EventArgs e)
