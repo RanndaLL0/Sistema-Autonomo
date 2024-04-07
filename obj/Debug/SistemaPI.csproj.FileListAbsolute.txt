@@ -37,4 +37,4 @@ C:\Users\ced40\OneDrive\Documentos\Sistema_Autonomo\Sistema-Autonomo\obj\Debug\S
 C:\Users\ced40\OneDrive\Documentos\Sistema_Autonomo\Sistema-Autonomo\obj\Debug\SistemaPI.csproj.Up2Date
 C:\Users\ced40\OneDrive\Documentos\Sistema_Autonomo\Sistema-Autonomo\obj\Debug\SistemaPI.exe
 C:\Users\ced40\OneDrive\Documentos\Sistema_Autonomo\Sistema-Autonomo\obj\Debug\SistemaPI.pdb
-C:\Users\Star\Projeto\SistemaPI\obj\Debug\SistemaPI.Mao.resources
+C:\Users\Star\Projeto\SistemaPI\obj\Debug\SistemaPI.panelCarta.resources

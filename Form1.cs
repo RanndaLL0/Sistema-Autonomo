@@ -190,8 +190,9 @@ namespace SistemaPI
                 lstCartas.Items.Add(cartas[i]);
             }
 
-            Mao m = new Mao();
-            m.ShowDialog();
+            panelCarta M = new panelCarta(cartas, idPartida);
+            M.ExibirMao();
+            M.ShowDialog();
 
         }
 

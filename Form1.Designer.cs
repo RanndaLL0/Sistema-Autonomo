@@ -83,7 +83,7 @@
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(753, 36);
+            this.panel1.Size = new System.Drawing.Size(870, 36);
             this.panel1.TabIndex = 0;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MouseMove);
@@ -95,7 +95,7 @@
             this.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimize.ForeColor = System.Drawing.Color.ForestGreen;
-            this.btnMinimize.Location = new System.Drawing.Point(653, 0);
+            this.btnMinimize.Location = new System.Drawing.Point(770, 0);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(28, 30);
             this.btnMinimize.TabIndex = 3;
@@ -109,7 +109,7 @@
             this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.ForeColor = System.Drawing.Color.ForestGreen;
-            this.btnClose.Location = new System.Drawing.Point(719, -2);
+            this.btnClose.Location = new System.Drawing.Point(836, -2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(34, 32);
             this.btnClose.TabIndex = 1;
@@ -123,7 +123,7 @@
             this.btnMaximize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMaximize.ForeColor = System.Drawing.Color.ForestGreen;
-            this.btnMaximize.Location = new System.Drawing.Point(687, 0);
+            this.btnMaximize.Location = new System.Drawing.Point(804, 0);
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Size = new System.Drawing.Size(26, 30);
             this.btnMaximize.TabIndex = 2;
@@ -196,7 +196,7 @@
             this.lblVersao.AutoSize = true;
             this.lblVersao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVersao.ForeColor = System.Drawing.Color.Black;
-            this.lblVersao.Location = new System.Drawing.Point(684, 450);
+            this.lblVersao.Location = new System.Drawing.Point(801, 446);
             this.lblVersao.Name = "lblVersao";
             this.lblVersao.Size = new System.Drawing.Size(41, 15);
             this.lblVersao.TabIndex = 11;
@@ -514,7 +514,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SistemaPI.Properties.Resources.D_D_Forest;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(753, 496);
+            this.ClientSize = new System.Drawing.Size(870, 492);
             this.Controls.Add(this.lblValorCartaApostada);
             this.Controls.Add(this.lblCartaApostada);
             this.Controls.Add(this.lblValorCartaJogada);

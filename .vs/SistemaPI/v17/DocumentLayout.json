@@ -3,40 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Star\\Projeto\\SistemaPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|c:\\users\\star\\projeto\\sistemapi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|C:\\Users\\Star\\Projeto\\SistemaPI\\form1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|solutionrelative:form1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|C:\\Users\\Star\\Projeto\\SistemaPI\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|C:\\Users\\Star\\Projeto\\SistemaPI\\mao.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|solutionrelative:mao.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+      "AbsoluteMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|c:\\users\\star\\projeto\\sistemapi\\mesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|solutionrelative:mesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|C:\\Users\\Star\\Projeto\\SistemaPI\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|C:\\Users\\Star\\Projeto\\SistemaPI\\mao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|solutionrelative:mao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|C:\\Users\\Star\\Projeto\\SistemaPI\\mesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|solutionrelative:mesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|c:\\users\\star\\projeto\\sistemapi\\mao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|solutionrelative:mao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|C:\\Users\\Star\\Projeto\\SistemaPI\\mesa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|solutionrelative:mesa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|C:\\Users\\Star\\Projeto\\SistemaPI\\mao.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|solutionrelative:mao.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|C:\\Users\\Star\\Projeto\\SistemaPI\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|solutionrelative:properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|C:\\Users\\Star\\Projeto\\SistemaPI\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,48 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T18:15:55.67Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Mao.cs",
-              "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mao.cs",
-              "RelativeDocumentMoniker": "Mao.cs",
-              "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mao.cs",
-              "RelativeToolTip": "Mao.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAUwBcAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T18:40:52.022Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T19:01:39.671Z",
-              "EditorCaption": " [Design]"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -98,77 +42,63 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Mao.resx",
-              "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mao.resx",
-              "RelativeDocumentMoniker": "Mao.resx",
-              "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mao.resx",
-              "RelativeToolTip": "Mao.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-03-31T18:38:18.76Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Mao.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mao.Designer.cs",
-              "RelativeDocumentMoniker": "Mao.Designer.cs",
-              "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mao.Designer.cs",
-              "RelativeToolTip": "Mao.Designer.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAqwCoAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T18:38:17.95Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Mao.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mao.cs",
-              "RelativeDocumentMoniker": "Mao.cs",
-              "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mao.cs [Design]",
-              "RelativeToolTip": "Mao.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T18:35:32.398Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form1.resx",
-              "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Form1.resx",
-              "RelativeDocumentMoniker": "Form1.resx",
-              "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Form1.resx",
-              "RelativeToolTip": "Form1.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-03-31T18:26:56.451Z",
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AQIAAK4AAAAAAAAAAAAUwLYAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T21:07:23.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Mesa.cs",
+              "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mesa.cs",
+              "RelativeDocumentMoniker": "Mesa.cs",
+              "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mesa.cs",
+              "RelativeToolTip": "Mesa.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAwwDIAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T20:58:05.035Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Mesa.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mesa.cs",
+              "RelativeDocumentMoniker": "Mesa.cs",
+              "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mesa.cs [Design]",
+              "RelativeToolTip": "Mesa.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T21:00:08.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Mesa.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mesa.Designer.cs",
+              "RelativeDocumentMoniker": "Mesa.Designer.cs",
+              "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mesa.Designer.cs",
+              "RelativeToolTip": "Mesa.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T21:00:06.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAtAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T18:26:48.623Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Resources.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Properties\\Resources.Designer.cs",
-              "RelativeDocumentMoniker": "Properties\\Resources.Designer.cs",
-              "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Properties\\Resources.Designer.cs",
-              "RelativeToolTip": "Properties\\Resources.Designer.cs",
-              "ViewState": "AQIAAN8AAAAAAAAAAAAiwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T18:18:56.46Z"
+              "WhenOpened": "2024-03-31T18:26:48.623Z"
             }
           ]
         }

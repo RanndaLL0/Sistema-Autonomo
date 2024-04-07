@@ -16,7 +16,7 @@ namespace SistemaPI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Mao());
+            Application.Run(new Form1());
         }
     }
 }
