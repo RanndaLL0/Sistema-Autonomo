@@ -43,13 +43,13 @@ namespace SistemaPI
             switch (n)
             {
                 case "C":
-                    carta.BackgroundImage = Image.FromFile(@"C:\Users\Star\Projeto\SistemaPI\Resources\Copas1.png");
+                    carta.BackgroundImage = Image.FromFile(@"C:\Users\ced40\OneDrive\Documentos\Sistema_Autonomo\Sistema-Autonomo\Resources\Copas1.png");
                     break;
                 case "O":
-                    carta.BackgroundImage = Image.FromFile(@"C:\Users\Star\Projeto\SistemaPI\Resources\Ouros1.png");
+                    carta.BackgroundImage = Image.FromFile(@"C:\Users\ced40\OneDrive\Documentos\Sistema_Autonomo\Sistema-Autonomo\Resources\Ouros1.png");
                     break;
                 case "E":
-                    carta.BackgroundImage = Image.FromFile(@"C:\Users\Star\Projeto\SistemaPI\Resources\Espadas1.png");
+                    carta.BackgroundImage = Image.FromFile(@"C:\Users\ced40\OneDrive\Documentos\Sistema_Autonomo\Sistema-Autonomo\Resources\Espadas1.png");
                     break;
             }
         }
@@ -82,8 +82,8 @@ namespace SistemaPI
             int nJogadores = Njogadores();
 
             //Posição inicial das cartas
-            int x = 100;
-            int y = 100;
+            int x = 200;
+            int y = 400;
             int count = 0;
             for(int i = 0; i < Cartas.Length - 1; i++)
             {
@@ -92,8 +92,8 @@ namespace SistemaPI
                 
                 if(nJogadores == 2 && count == 6)
                 {
-                    x = 800;
-                    y = 400;
+                    x = 200;
+                    y = 500;
                 }
                 else if(nJogadores > 2 && count == 7)
                 {
@@ -101,15 +101,15 @@ namespace SistemaPI
                     //y = 
                 }
                 imgCarta(carta, auxCarta[2]);
-                carta.Height = 137;
-                carta.Width = 91;
+                carta.Height = 70;
+                carta.Width = 61;
                 carta.Left = x;
                 carta.Top = y;
 
                 count++;
                 carta.BackgroundImageLayout = ImageLayout.Stretch;
                 this.Controls.Add(carta);
-                x += 97;
+                x += 69;
             }
         }
 

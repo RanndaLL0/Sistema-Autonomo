@@ -38,3 +38,4 @@ C:\Users\ced40\OneDrive\Documentos\Sistema_Autonomo\Sistema-Autonomo\obj\Debug\S
 C:\Users\ced40\OneDrive\Documentos\Sistema_Autonomo\Sistema-Autonomo\obj\Debug\SistemaPI.exe
 C:\Users\ced40\OneDrive\Documentos\Sistema_Autonomo\Sistema-Autonomo\obj\Debug\SistemaPI.pdb
 C:\Users\Star\Projeto\SistemaPI\obj\Debug\SistemaPI.panelCarta.resources
+C:\Users\ced40\OneDrive\Documentos\Sistema_Autonomo\Sistema-Autonomo\obj\Debug\SistemaPI.panelCarta.resources
