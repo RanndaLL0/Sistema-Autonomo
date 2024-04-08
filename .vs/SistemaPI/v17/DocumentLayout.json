@@ -19,6 +19,10 @@
       "RelativeMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|c:\\users\\star\\projeto\\sistemapi\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|solutionrelative:properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|C:\\Users\\Star\\Projeto\\SistemaPI\\mesa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|solutionrelative:mesa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -34,8 +38,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AQIAAMwAAAAAAAAAAAAYwOUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T21:07:23.49Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -46,39 +64,27 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "Properties\\Resources.resx",
+              "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Properties\\Resources.resx",
+              "RelativeToolTip": "Properties\\Resources.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-04-07T23:22:01.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2024-04-07T01:35:04.673Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAgwCUAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
-              "WhenOpened": "2024-04-06T21:07:23.49Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Mesa.cs",
-              "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mesa.cs",
-              "RelativeDocumentMoniker": "Mesa.cs",
-              "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mesa.cs",
-              "RelativeToolTip": "Mesa.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAuwEgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-06T20:58:05.035Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T01:35:04.673Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -94,28 +100,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "Mesa.cs",
+              "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mesa.cs",
+              "RelativeDocumentMoniker": "Mesa.cs",
+              "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mesa.cs",
+              "RelativeToolTip": "Mesa.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAkwFoAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T20:58:05.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Mesa.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mesa.Designer.cs",
               "RelativeDocumentMoniker": "Mesa.Designer.cs",
               "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mesa.Designer.cs",
               "RelativeToolTip": "Mesa.Designer.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAowBYAAAAIAAAA",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAAAFYAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-06T21:00:06.502Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAkAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T18:26:48.623Z"
+              "WhenOpened": "2024-03-31T18:26:48.623Z",
+              "EditorCaption": ""
             }
           ]
         }

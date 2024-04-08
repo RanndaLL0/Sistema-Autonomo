@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Contracts;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,7 @@ namespace SistemaPI
     public partial class Form1 : Form
     {
         public Point MouseLocation;
+        panelCarta M;
 
         public Form1()
         {
@@ -177,6 +179,7 @@ namespace SistemaPI
 
         }
 
+
         private void btnExibirMao_Click(object sender, EventArgs e)
         {
             lstCartas.Items.Clear();
@@ -190,25 +193,39 @@ namespace SistemaPI
                 lstCartas.Items.Add(cartas[i]);
             }
 
-            panelCarta M = new panelCarta(cartas, idPartida);
+            M = new panelCarta(cartas, idPartida);
             M.ExibirMao();
-            M.ShowDialog();
+            M.Show();
+        }
+
+        public void ListarMao()
+        {
+            lstCartas.Items.Clear();
+            int idPartida = int.Parse(txtID.Text);
+            string retorno = Jogo.ConsultarMao(idPartida);
+            retorno = retorno.Replace("\r", "");
+            string[] cartas = retorno.Split('\n');
+
+            for (int i = 0; i < cartas.Length; i++)
+            {
+                lstCartas.Items.Add(cartas[i]);
+            }
+            M.Cartas = cartas;
         }
 
         private void btnJogarCarta_Click(object sender, EventArgs e)
         {
-            lstCartas.Items.Clear();
-            if(txtIdCarta.Text == "")
+
+            string retorno = Jogo.Jogar(int.Parse(txtidJogador.Text), txtsenhaJogador.Text, int.Parse(txtIdCarta.Text));
+            if (retorno.Length > 4 && retorno.Substring(0,4) == "ERRO")
             {
                 MessageBox.Show("Ocorreu um erro: Valores invalidos para jogar uma carta", "Valor Invalido", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
-            int idJogador = int.Parse(txtidJogador.Text);
-            string senhaJogador = txtsenhaJogador.Text;
-            int posicaoCartaJogada = int.Parse(txtIdCarta.Text);
-            lblValorCartaJogada.Visible = true;
-            lblValorCartaJogada.Text = Jogo.Jogar(idJogador, senhaJogador, posicaoCartaJogada);              
+            lblValorCartaJogada.Text = retorno;
+            lblValorCartaJogada.Visible = true;   
+            ListarMao();
+            M.ExibirMao();
         }
 
         private void btnApostar_Click(object sender, EventArgs e)
@@ -231,7 +248,6 @@ namespace SistemaPI
             {
             lblValorCartaApostada.Text = Jogo.Apostar(idJogador, senhaJogador, posicaoCartaJogada);
             }
-
         }
     }
 }

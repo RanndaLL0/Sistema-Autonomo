@@ -18,6 +18,8 @@ namespace SistemaPI
         public Point MouseLocation; ////Posição do Mouse
         public string[] Cartas { get; set; } //Cartas da mesa
         public int Id { get; set; } //Id da partida
+        public int IdJogador { get; set; }
+        public int CartaJogada { get; set; }
 
         public panelCarta(string[] cartas,int id)
         {
@@ -84,10 +86,31 @@ namespace SistemaPI
             string[] listaJ = listaDeJogadores.Split('\n');
             return listaJ.Length;
         }
+        public void ExibirJogada()
+        {
+            string retorno = Jogo.ExibirJogadas(Id);
+        }
+
+        public void AtualizarP()
+        {
+            List<Control> controls = new List<Control>();
+            foreach (Control c in Controls) 
+            {
+                if(c is Panel && c != pnlHeader)
+                {
+                    controls.Add(c);
+                }
+            }
+            foreach(Control c in controls)
+            {
+                Controls.Remove(c);
+                c.Dispose();
+            }
+        }
 
         public void ExibirMao()
         {
-           
+            AtualizarP();
             foreach(Control c in Controls)
             {
                 if(c is Panel)
@@ -136,12 +159,17 @@ namespace SistemaPI
                 carta.BackgroundImageLayout = ImageLayout.Stretch;
                 this.Controls.Add(carta);
                 x += 69;
+                Refresh();
             }
         }
 
         private void pnlHeader_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
         }
     }
 }
