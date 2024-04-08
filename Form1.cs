@@ -14,13 +14,21 @@ namespace SistemaPI
 {
     public partial class Form1 : Form
     {
-        public Point MouseLocation;
         panelCarta M;
 
         public Form1()
         {
             InitializeComponent();
+            this.FormClosing += TelaInicial_FormClosing; //Ao fechar o formulario o programa se encerra
             lblVersao.Text = Jogo.Versao;
+        }
+
+        private void TelaInicial_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                Application.Exit(); // Encerra a aplicação
+            }
         }
 
         //Header
@@ -28,40 +36,6 @@ namespace SistemaPI
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
-        }
-
-        //posicao do forms
-
-        private void MouseDown(object sender, MouseEventArgs e)
-        {
-            MouseLocation = new Point(-e.X, -e.Y);
-        }
-
-        private void MouseMove(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                Point mousePose = MousePosition;
-                mousePose.Offset(MouseLocation.X, MouseLocation.Y);
-                Location = mousePose;
-            }
-        }
-
-        //fechar,maximizar,minimizar tela
-
-        private void btnMaximize_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Maximized;
-        }
-
-        private void btnMinimize_click (object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Minimized;
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         //listar partidas
@@ -164,6 +138,7 @@ namespace SistemaPI
 
         }
 
+        
         private void btnIniciar_Click(object sender, EventArgs e)
         {
             if(txtidJogador.Text == "" || txtsenhaJogador.Text == "")
