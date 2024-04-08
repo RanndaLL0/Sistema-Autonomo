@@ -120,43 +120,22 @@
     <None Include="Resources\D_D-Forest.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Espadas1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Espadas2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Estrela1.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Estrela2.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Lua1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Lua2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Ouros1.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Ouros2.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Paus1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Paus2.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Triângulo1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Triângulo2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Copas1.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Copas2.png" />

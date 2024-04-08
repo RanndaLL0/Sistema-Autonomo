@@ -63,13 +63,13 @@ namespace SistemaPI
             switch (n)
             {
                 case "C":
-                    carta.BackgroundImage = Image.FromFile(@"C:\Users\Star\Projeto\SistemaPI\Resources\Copas1.png");
+                    carta.BackgroundImage = Image.FromFile(@"C:\Users\Star\Projeto\SistemaPI\Resources\C.png");
                     break;
                 case "O":
-                    carta.BackgroundImage = Image.FromFile(@"C:\Users\Star\Projeto\SistemaPI\Resources\Ouros1.png");
+                    carta.BackgroundImage = Image.FromFile(@"C:\Users\Star\Projeto\SistemaPI\Resources\O.png");
                     break;
                 case "E":
-                    carta.BackgroundImage = Image.FromFile(@"C:\Users\Star\Projeto\SistemaPI\Resources\Espadas1.png");
+                    carta.BackgroundImage = Image.FromFile(@"C:\Users\Star\Projeto\SistemaPI\Resources\E.png");
                     break;
             }
         }
@@ -89,6 +89,40 @@ namespace SistemaPI
         public void ExibirJogada()
         {
             string retorno = Jogo.ExibirJogadas(Id);
+            if(retorno.Length > 4 && retorno.Substring(0,4) == "ERRO")
+            {
+                MessageBox.Show($"Ocorreu um erro ao verificar a rodada:","Erro",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                return;
+            }
+            retorno = retorno.Replace("\r", "");
+            if(retorno.Length > 0)
+            {
+                retorno = retorno.Substring(0, retorno.Length - 1);
+            }
+            string[] LJogada = retorno.Split('\n');
+            string[] ultimaRodada = LJogada[LJogada.Length - 1].Split(',');
+            int x = 300;
+            foreach(string j in LJogada)
+            {
+                string[] rodadas = j.Split(',');
+                if (rodadas[0] == ultimaRodada[0])
+                {
+                    string c = rodadas[2];
+                    string PathCard = $@"C:\Users\Star\Projeto\SistemaPI\Resources\{c}.png";
+
+                    Panel carta = new Panel();
+
+                    carta.BackgroundImage = Image.FromFile(PathCard);
+                    carta.Height = 70;
+                    carta.Width = 61;
+                    carta.Left = x;
+                    carta.Top = 300;
+
+                    carta.BackgroundImageLayout = ImageLayout.Stretch;
+                    this.Controls.Add(carta);
+                }
+                x = 100;
+            }
         }
 
         public void AtualizarP()

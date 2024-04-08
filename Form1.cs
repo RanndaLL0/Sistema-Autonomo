@@ -226,6 +226,7 @@ namespace SistemaPI
             lblValorCartaJogada.Visible = true;   
             ListarMao();
             M.ExibirMao();
+            M.ExibirJogada();
         }
 
         private void btnApostar_Click(object sender, EventArgs e)
