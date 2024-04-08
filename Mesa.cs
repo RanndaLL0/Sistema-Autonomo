@@ -101,8 +101,12 @@ namespace SistemaPI
             }
             string[] LJogada = retorno.Split('\n');
             string[] ultimaRodada = LJogada[LJogada.Length - 1].Split(',');
+            string valor = ultimaRodada[3];
+            
             int x = 300;
-            foreach(string j in LJogada)
+            lblJogadas.Text = retorno;
+            lblJogadas.Visible = true;
+            foreach (string j in LJogada)
             {
                 string[] rodadas = j.Split(',');
                 if (rodadas[0] == ultimaRodada[0])
@@ -121,7 +125,7 @@ namespace SistemaPI
                     carta.BackgroundImageLayout = ImageLayout.Stretch;
                     this.Controls.Add(carta);
                 }
-                x = 100;
+                x += 100;
             }
         }
 
@@ -205,5 +209,6 @@ namespace SistemaPI
         private void button1_Click(object sender, EventArgs e)
         {
         }
+
     }
 }
