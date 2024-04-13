@@ -138,6 +138,21 @@ namespace SistemaPI
 
         }
 
+        public void IniciarJogo()
+        {
+            int idPartida = int.Parse(txtID.Text);
+            string retorno = Jogo.ConsultarMao(idPartida);
+            retorno = retorno.Replace("\r", "");
+            string[] cartas = retorno.Split('\n');
+
+            for (int i = 0; i < cartas.Length; i++)
+            {
+                lstCartas.Items.Add(cartas[i]);
+            }
+
+            M = new panelCarta(cartas, idPartida, lstCartas);
+            M.Show();
+        }
         
         private void btnIniciar_Click(object sender, EventArgs e)
         {
@@ -151,27 +166,10 @@ namespace SistemaPI
             string sorteado = Jogo.IniciarPartida(idJogador, senhaJogador);
             lblidSorteado.Visible = true;
             lblidSorteado.Text = sorteado;
-
+            //Listar as cartas e exibir na mão
+            IniciarJogo();
         }
 
-
-        private void btnExibirMao_Click(object sender, EventArgs e)
-        {
-            lstCartas.Items.Clear();
-            int idPartida = int.Parse(txtID.Text);
-            string retorno = Jogo.ConsultarMao(idPartida);
-            retorno = retorno.Replace("\r", "");
-            string[] cartas = retorno.Split('\n');
-
-            for (int i = 0; i < cartas.Length; i++)
-            {
-                lstCartas.Items.Add(cartas[i]);
-            }
-
-            M = new panelCarta(cartas, idPartida);
-            M.ExibirMao();
-            M.Show();
-        }
 
         public void ListarMao()
         {

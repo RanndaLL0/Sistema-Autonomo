@@ -17,44 +17,56 @@ namespace SistemaPI
     {
         public Point MouseLocation; ////Posição do Mouse
         public string[] Cartas { get; set; } //Cartas da mesa
-        public int Id { get; set; } //Id da partida
+        public int IdPartida { get; set; } //Id da partida
         public int IdJogador { get; set; }
         public int CartaJogada { get; set; }
+        ListBox lstCartas { get; set; }
 
-        public panelCarta(string[] cartas,int id)
+    public panelCarta(string[] cartas, int idPartida, ListBox lstCartas)
         {
             Cartas = cartas;
-            Id = id;
+            IdPartida = idPartida;
             InitializeComponent();
+            CartasLog(lstCartas);
+            ExibirMao();
         }
 
-        //posicao do forms
-
-        private void MouseDown(object sender, MouseEventArgs e)
+        public void CartasLog(ListBox lstCartas)
         {
-            MouseLocation = new Point(-e.X, -e.Y);
+            this.lstCartas = lstCartas;
+            this.lstCartas.Left = 40;
+            this.lstCartas.Top = 100;
+            this.lstCartas.Visible = true;
+            this.Controls.Add(lstCartas);
         }
 
-        private void MouseMove(object sender, MouseEventArgs e)
+        public void ListarMao()
         {
-            if (e.Button == MouseButtons.Left)
+            this.lstCartas.Items.Clear();
+            int idPartida = IdPartida;
+            string retorno = Jogo.ConsultarMao(idPartida);
+            retorno = retorno.Replace("\r", "");
+            string[] cartas = retorno.Split('\n');
+
+            for (int i = 0; i < cartas.Length; i++)
             {
-                Point mousePose = MousePosition;
-                mousePose.Offset(MouseLocation.X, MouseLocation.Y);
-                Location = mousePose;
+                lstCartas.Items.Add(cartas[i]);
             }
+            Cartas = cartas;
         }
-
-        //Botoes do cabeçalho
-
-        private void btnClose_Click(object sender, EventArgs e)
+        private void btnJogarCarta_Click_1(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
+            string retorno = Jogo.Jogar(int.Parse(txtidJogador.Text), txtsenhaJogador.Text, int.Parse(txtIdCarta.Text));
+            if (retorno.Length > 4 && retorno.Substring(0, 4) == "ERRO")
+            {
+                MessageBox.Show("Ocorreu um erro: Valores invalidos para jogar uma carta", "Valor Invalido", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            txtIdCarta.Text = retorno;
+            txtIdCarta.Visible = true;
+            ListarMao();
+            ExibirMao();
+            ExibirJogada();
         }
 
 
@@ -76,7 +88,7 @@ namespace SistemaPI
 
         public int Njogadores()
         {
-            string listaDeJogadores = Jogo.ListarJogadores(Id);
+            string listaDeJogadores = Jogo.ListarJogadores(IdPartida);
 
             listaDeJogadores = listaDeJogadores.Replace("\r", "");
             if (listaDeJogadores.Length > 0)
@@ -88,7 +100,7 @@ namespace SistemaPI
         }
         public void ExibirJogada()
         {
-            string retorno = Jogo.ExibirJogadas(Id);
+            string retorno = Jogo.ExibirJogadas(IdPartida);
             if(retorno.Length > 4 && retorno.Substring(0,4) == "ERRO")
             {
                 MessageBox.Show($"Ocorreu um erro ao verificar a rodada:","Erro",MessageBoxButtons.OK,MessageBoxIcon.Error);
@@ -132,13 +144,7 @@ namespace SistemaPI
         public void AtualizarP()
         {
             List<Control> controls = new List<Control>();
-            foreach (Control c in Controls) 
-            {
-                if(c is Panel && c != pnlHeader)
-                {
-                    controls.Add(c);
-                }
-            }
+
             foreach(Control c in controls)
             {
                 Controls.Remove(c);
@@ -153,19 +159,16 @@ namespace SistemaPI
             {
                 if(c is Panel)
                 {
-                    if(c != pnlHeader)
-                    {
                         Controls.Remove(c);
                         c.Dispose();
-                    }
                 }
             }
 
             int nJogadores = Njogadores();
 
             //Posição inicial das cartas
-            int x = 250;
-            int y = 520;
+            int x = 1050;
+            int y = 550;
             int count = 0;
             for(int i = 0; i < Cartas.Length - 1; i++)
             {
@@ -174,40 +177,30 @@ namespace SistemaPI
                 
                 if(nJogadores == 2 && count == 6)
                 {
-                    x = 250;
-                    y = 620;
+                    x = 1050;
+                    y = 610;
                 }
                 else if(nJogadores == 2 && count == 12)
                 {
-                    x = 250;
-                    y = 150;
+                    x = 1050;
+                    y = 380;
                 }
                 else if(nJogadores == 2 && count == 18)
                 {
-                    x = 250;
-                    y = 50;
+                    x = 1050;
+                    y = 440;
                 }
                 imgCarta(carta, auxCarta[2]);
-                carta.Height = 70;
-                carta.Width = 61;
+                carta.Height = 55;
+                carta.Width = 44;
                 carta.Left = x;
                 carta.Top = y;
 
                 count++;
                 carta.BackgroundImageLayout = ImageLayout.Stretch;
                 this.Controls.Add(carta);
-                x += 69;
-                Refresh();
+                x += 49;
             }
-        }
-
-        private void pnlHeader_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
         }
 
     }

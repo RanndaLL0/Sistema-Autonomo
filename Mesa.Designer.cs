@@ -28,44 +28,53 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnlHeader = new System.Windows.Forms.Panel();
             this.lblJogadas = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pnlHeader.SuspendLayout();
+            this.txtidJogador = new System.Windows.Forms.TextBox();
+            this.txtsenhaJogador = new System.Windows.Forms.TextBox();
+            this.txtIdCarta = new System.Windows.Forms.TextBox();
+            this.btnJogarCarta = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // pnlHeader
-            // 
-            this.pnlHeader.BackColor = System.Drawing.Color.ForestGreen;
-            this.pnlHeader.Controls.Add(this.label1);
-            this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlHeader.Location = new System.Drawing.Point(0, 0);
-            this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(900, 38);
-            this.pnlHeader.TabIndex = 0;
-            this.pnlHeader.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseDown);
-            this.pnlHeader.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MouseMove);
             // 
             // lblJogadas
             // 
             this.lblJogadas.AutoSize = true;
-            this.lblJogadas.Location = new System.Drawing.Point(65, 139);
+            this.lblJogadas.Location = new System.Drawing.Point(63, 610);
             this.lblJogadas.Name = "lblJogadas";
             this.lblJogadas.Size = new System.Drawing.Size(76, 13);
             this.lblJogadas.TabIndex = 1;
             this.lblJogadas.Text = "Carta Jogada: ";
             this.lblJogadas.Visible = false;
             // 
-            // label1
+            // txtidJogador
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 24);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Budapeste";
-            this.label1.Visible = false;
+            this.txtidJogador.Location = new System.Drawing.Point(49, 455);
+            this.txtidJogador.Name = "txtidJogador";
+            this.txtidJogador.Size = new System.Drawing.Size(100, 20);
+            this.txtidJogador.TabIndex = 2;
+            // 
+            // txtsenhaJogador
+            // 
+            this.txtsenhaJogador.Location = new System.Drawing.Point(49, 493);
+            this.txtsenhaJogador.Name = "txtsenhaJogador";
+            this.txtsenhaJogador.Size = new System.Drawing.Size(100, 20);
+            this.txtsenhaJogador.TabIndex = 3;
+            // 
+            // txtIdCarta
+            // 
+            this.txtIdCarta.Location = new System.Drawing.Point(49, 533);
+            this.txtIdCarta.Name = "txtIdCarta";
+            this.txtIdCarta.Size = new System.Drawing.Size(100, 20);
+            this.txtIdCarta.TabIndex = 4;
+            // 
+            // btnJogarCarta
+            // 
+            this.btnJogarCarta.Location = new System.Drawing.Point(64, 559);
+            this.btnJogarCarta.Name = "btnJogarCarta";
+            this.btnJogarCarta.Size = new System.Drawing.Size(75, 23);
+            this.btnJogarCarta.TabIndex = 5;
+            this.btnJogarCarta.Text = "button1";
+            this.btnJogarCarta.UseVisualStyleBackColor = true;
+            this.btnJogarCarta.Click += new System.EventHandler(this.btnJogarCarta_Click_1);
             // 
             // panelCarta
             // 
@@ -73,22 +82,24 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(900, 700);
+            this.Controls.Add(this.btnJogarCarta);
+            this.Controls.Add(this.txtIdCarta);
+            this.Controls.Add(this.txtsenhaJogador);
+            this.Controls.Add(this.txtidJogador);
             this.Controls.Add(this.lblJogadas);
-            this.Controls.Add(this.pnlHeader);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "panelCarta";
             this.Text = "Mao";
-            this.pnlHeader.ResumeLayout(false);
-            this.pnlHeader.PerformLayout();
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel pnlHeader;
         private System.Windows.Forms.Label lblJogadas;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtidJogador;
+        private System.Windows.Forms.TextBox txtsenhaJogador;
+        private System.Windows.Forms.TextBox txtIdCarta;
+        private System.Windows.Forms.Button btnJogarCarta;
     }
 }

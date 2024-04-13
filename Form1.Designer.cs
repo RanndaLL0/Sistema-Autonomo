@@ -56,7 +56,6 @@
             this.txtsenhaJogador = new System.Windows.Forms.TextBox();
             this.btnIniciar = new System.Windows.Forms.Button();
             this.lblSorteado = new System.Windows.Forms.Label();
-            this.btnExibirMao = new System.Windows.Forms.Button();
             this.lstCartas = new System.Windows.Forms.ListBox();
             this.txtIdCarta = new System.Windows.Forms.TextBox();
             this.lblCartaID = new System.Windows.Forms.Label();
@@ -319,7 +318,7 @@
             // btnIniciar
             // 
             this.btnIniciar.ForeColor = System.Drawing.Color.Black;
-            this.btnIniciar.Location = new System.Drawing.Point(442, 43);
+            this.btnIniciar.Location = new System.Drawing.Point(485, 42);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(91, 23);
             this.btnIniciar.TabIndex = 33;
@@ -339,16 +338,6 @@
             this.lblSorteado.TabIndex = 34;
             this.lblSorteado.Text = "Jogador Sorteado: ";
             // 
-            // btnExibirMao
-            // 
-            this.btnExibirMao.Location = new System.Drawing.Point(560, 42);
-            this.btnExibirMao.Name = "btnExibirMao";
-            this.btnExibirMao.Size = new System.Drawing.Size(70, 24);
-            this.btnExibirMao.TabIndex = 35;
-            this.btnExibirMao.Text = "Exibir Mãos";
-            this.btnExibirMao.UseVisualStyleBackColor = true;
-            this.btnExibirMao.Click += new System.EventHandler(this.btnExibirMao_Click);
-            // 
             // lstCartas
             // 
             this.lstCartas.FormattingEnabled = true;
@@ -356,6 +345,7 @@
             this.lstCartas.Name = "lstCartas";
             this.lstCartas.Size = new System.Drawing.Size(147, 329);
             this.lstCartas.TabIndex = 36;
+            this.lstCartas.Visible = false;
             // 
             // txtIdCarta
             // 
@@ -462,7 +452,6 @@
             this.Controls.Add(this.lblCartaID);
             this.Controls.Add(this.txtIdCarta);
             this.Controls.Add(this.lstCartas);
-            this.Controls.Add(this.btnExibirMao);
             this.Controls.Add(this.lblSorteado);
             this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.txtsenhaJogador);
@@ -493,6 +482,7 @@
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lobby";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -527,7 +517,6 @@
         private System.Windows.Forms.TextBox txtsenhaJogador;
         private System.Windows.Forms.Button btnIniciar;
         private System.Windows.Forms.Label lblSorteado;
-        private System.Windows.Forms.Button btnExibirMao;
         private System.Windows.Forms.ListBox lstCartas;
         private System.Windows.Forms.TextBox txtIdCarta;
         private System.Windows.Forms.Label lblCartaID;
