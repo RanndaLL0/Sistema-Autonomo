@@ -148,6 +148,9 @@
   <data name="Paus2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Paus2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TelaInicial" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TelaInicial.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Triângulo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Triângulo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

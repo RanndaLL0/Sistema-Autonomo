@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnMinimize = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.btnMaximize = new System.Windows.Forms.Button();
             this.btn_listar = new System.Windows.Forms.Button();
             this.lstPartidas = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -60,7 +56,6 @@
             this.txtsenhaJogador = new System.Windows.Forms.TextBox();
             this.btnIniciar = new System.Windows.Forms.Button();
             this.lblSorteado = new System.Windows.Forms.Label();
-            this.btnExibirMao = new System.Windows.Forms.Button();
             this.lstCartas = new System.Windows.Forms.ListBox();
             this.txtIdCarta = new System.Windows.Forms.TextBox();
             this.lblCartaID = new System.Windows.Forms.Label();
@@ -70,65 +65,7 @@
             this.lblValorCartaJogada = new System.Windows.Forms.Label();
             this.lblCartaApostada = new System.Windows.Forms.Label();
             this.lblValorCartaApostada = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.ForestGreen;
-            this.panel1.Controls.Add(this.btnMinimize);
-            this.panel1.Controls.Add(this.btnClose);
-            this.panel1.Controls.Add(this.btnMaximize);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(870, 36);
-            this.panel1.TabIndex = 0;
-            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseDown);
-            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MouseMove);
-            // 
-            // btnMinimize
-            // 
-            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimize.BackgroundImage = global::SistemaPI.Properties.Resources.janela_minizar;
-            this.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimize.ForeColor = System.Drawing.Color.ForestGreen;
-            this.btnMinimize.Location = new System.Drawing.Point(770, 0);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(28, 30);
-            this.btnMinimize.TabIndex = 3;
-            this.btnMinimize.UseVisualStyleBackColor = true;
-            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.BackgroundImage = global::SistemaPI.Properties.Resources.janela_fechar;
-            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.ForeColor = System.Drawing.Color.ForestGreen;
-            this.btnClose.Location = new System.Drawing.Point(836, -2);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(34, 32);
-            this.btnClose.TabIndex = 1;
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // btnMaximize
-            // 
-            this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaximize.BackgroundImage = global::SistemaPI.Properties.Resources.janela_maximizr;
-            this.btnMaximize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaximize.ForeColor = System.Drawing.Color.ForestGreen;
-            this.btnMaximize.Location = new System.Drawing.Point(804, 0);
-            this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.Size = new System.Drawing.Size(26, 30);
-            this.btnMaximize.TabIndex = 2;
-            this.btnMaximize.UseVisualStyleBackColor = true;
-            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
             // 
             // btn_listar
             // 
@@ -381,7 +318,7 @@
             // btnIniciar
             // 
             this.btnIniciar.ForeColor = System.Drawing.Color.Black;
-            this.btnIniciar.Location = new System.Drawing.Point(442, 43);
+            this.btnIniciar.Location = new System.Drawing.Point(485, 42);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(91, 23);
             this.btnIniciar.TabIndex = 33;
@@ -401,16 +338,6 @@
             this.lblSorteado.TabIndex = 34;
             this.lblSorteado.Text = "Jogador Sorteado: ";
             // 
-            // btnExibirMao
-            // 
-            this.btnExibirMao.Location = new System.Drawing.Point(560, 42);
-            this.btnExibirMao.Name = "btnExibirMao";
-            this.btnExibirMao.Size = new System.Drawing.Size(70, 24);
-            this.btnExibirMao.TabIndex = 35;
-            this.btnExibirMao.Text = "Exibir Mãos";
-            this.btnExibirMao.UseVisualStyleBackColor = true;
-            this.btnExibirMao.Click += new System.EventHandler(this.btnExibirMao_Click);
-            // 
             // lstCartas
             // 
             this.lstCartas.FormattingEnabled = true;
@@ -418,6 +345,7 @@
             this.lstCartas.Name = "lstCartas";
             this.lstCartas.Size = new System.Drawing.Size(147, 329);
             this.lstCartas.TabIndex = 36;
+            this.lstCartas.Visible = false;
             // 
             // txtIdCarta
             // 
@@ -512,7 +440,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::SistemaPI.Properties.Resources.D_D_Forest;
+            this.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(870, 492);
             this.Controls.Add(this.lblValorCartaApostada);
@@ -524,7 +452,6 @@
             this.Controls.Add(this.lblCartaID);
             this.Controls.Add(this.txtIdCarta);
             this.Controls.Add(this.lstCartas);
-            this.Controls.Add(this.btnExibirMao);
             this.Controls.Add(this.lblSorteado);
             this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.txtsenhaJogador);
@@ -551,24 +478,18 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lstPartidas);
             this.Controls.Add(this.btn_listar);
-            this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
-            this.Text = "Form1";
-            this.panel1.ResumeLayout(false);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Lobby";
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnMinimize;
-        private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Button btnMaximize;
         private System.Windows.Forms.Button btn_listar;
         private System.Windows.Forms.ListBox lstPartidas;
         private System.Windows.Forms.Label label1;
@@ -596,7 +517,6 @@
         private System.Windows.Forms.TextBox txtsenhaJogador;
         private System.Windows.Forms.Button btnIniciar;
         private System.Windows.Forms.Label lblSorteado;
-        private System.Windows.Forms.Button btnExibirMao;
         private System.Windows.Forms.ListBox lstCartas;
         private System.Windows.Forms.TextBox txtIdCarta;
         private System.Windows.Forms.Label lblCartaID;
