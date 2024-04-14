@@ -3,32 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Star\\Projeto\\SistemaPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|c:\\users\\star\\projeto\\sistemapi\\entidades\\partida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|solutionrelative:entidades\\partida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|c:\\users\\star\\projeto\\sistemapi\\mesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|solutionrelative:mesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|c:\\users\\star\\projeto\\sistemapi\\entidades\\jogador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|solutionrelative:entidades\\jogador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|c:\\users\\star\\projeto\\sistemapi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|c:\\users\\star\\projeto\\sistemapi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|c:\\users\\star\\projeto\\sistemapi\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|C:\\Users\\Star\\Projeto\\SistemaPI\\mesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|c:\\users\\star\\projeto\\sistemapi\\mesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|solutionrelative:mesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|c:\\users\\star\\projeto\\sistemapi\\mesa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|solutionrelative:mesa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|C:\\Users\\Star\\Projeto\\SistemaPI\\telainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A4559ECA-8919-48A5-A0DF-04C5C7B30BCC}|SistemaPI.csproj|solutionrelative:telainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,82 +42,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Mesa.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mesa.Designer.cs",
-              "RelativeDocumentMoniker": "Mesa.Designer.cs",
-              "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mesa.Designer.cs",
-              "RelativeToolTip": "Mesa.Designer.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAMwC0AAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T17:09:17.846Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Form1.Designer.cs",
-              "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AQIAAAMBAAAAAAAAAAAqwFQBAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T16:45:06.801Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Mesa.cs",
-              "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mesa.cs",
-              "RelativeDocumentMoniker": "Mesa.cs",
-              "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mesa.cs",
-              "RelativeToolTip": "Mesa.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAAADEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T16:06:03.932Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAHwAAAAAAAAAAAAiwJYAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T15:57:56.743Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T17:28:07.651Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TelaInicial.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\TelaInicial.cs",
-              "RelativeDocumentMoniker": "TelaInicial.cs",
-              "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\TelaInicial.cs [Design]",
-              "RelativeToolTip": "TelaInicial.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T17:21:40.813Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Mesa.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mesa.cs",
@@ -133,8 +49,60 @@
               "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mesa.cs [Design]",
               "RelativeToolTip": "Mesa.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-06T21:00:08.452Z",
+              "WhenOpened": "2024-04-14T05:30:32.002Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AQIAALEAAAAAAAAAAAAewMoAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T01:34:53.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Jogador.cs",
+              "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Entidades\\Jogador.cs",
+              "RelativeDocumentMoniker": "Entidades\\Jogador.cs",
+              "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Entidades\\Jogador.cs",
+              "RelativeToolTip": "Entidades\\Jogador.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAkwA8AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T01:20:02.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Mesa.cs",
+              "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mesa.cs",
+              "RelativeDocumentMoniker": "Mesa.cs",
+              "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Mesa.cs",
+              "RelativeToolTip": "Mesa.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAQwCcAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T16:06:03.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Partida.cs",
+              "DocumentMoniker": "C:\\Users\\Star\\Projeto\\SistemaPI\\Entidades\\Partida.cs",
+              "RelativeDocumentMoniker": "Entidades\\Partida.cs",
+              "ToolTip": "C:\\Users\\Star\\Projeto\\SistemaPI\\Entidades\\Partida.cs",
+              "RelativeToolTip": "Entidades\\Partida.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T01:11:26.593Z",
+              "EditorCaption": ""
             }
           ]
         },

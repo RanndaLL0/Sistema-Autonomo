@@ -15,12 +15,14 @@ namespace SistemaPI
     public partial class Form1 : Form
     {
         panelCarta M;
+        List<int> IdJogadores;
 
         public Form1()
         {
             InitializeComponent();
             this.FormClosing += TelaInicial_FormClosing; //Ao fechar o formulario o programa se encerra
             lblVersao.Text = Jogo.Versao;
+            IdJogadores = new List<int>();
         }
 
         private void TelaInicial_FormClosing(object sender, FormClosingEventArgs e)
@@ -132,6 +134,7 @@ namespace SistemaPI
 
             string[] infoJogador = retorno.Split(',');
             string idJogador = infoJogador[0];
+            IdJogadores.Add(int.Parse(idJogador));
             string senhaJogador = infoJogador[1];
             txtidJogador.Text = idJogador;
             txtsenhaJogador.Text = senhaJogador;
@@ -150,7 +153,7 @@ namespace SistemaPI
                 lstCartas.Items.Add(cartas[i]);
             }
 
-            M = new panelCarta(cartas, idPartida, lstCartas);
+            M = new panelCarta(cartas, idPartida, lstCartas,IdJogadores);
             M.Show();
         }
         
@@ -198,7 +201,6 @@ namespace SistemaPI
             lblValorCartaJogada.Text = retorno;
             lblValorCartaJogada.Visible = true;   
             ListarMao();
-            M.ExibirMao();
             M.ExibirJogada();
         }
 

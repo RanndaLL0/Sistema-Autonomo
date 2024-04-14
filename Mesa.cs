@@ -1,4 +1,5 @@
 ﻿using MagicTrickServer;
+using SistemaPI.Entidades;
 using SistemaPI.Properties;
 using System;
 using System.Collections.Generic;
@@ -19,16 +20,24 @@ namespace SistemaPI
         public string[] Cartas { get; set; } //Cartas da mesa
         public int IdPartida { get; set; } //Id da partida
         public int IdJogador { get; set; }
+        public List<int> IdJogadores = new List<int>();
         public int CartaJogada { get; set; }
         ListBox lstCartas { get; set; }
+        public Partida Partida { get; set; }
 
-    public panelCarta(string[] cartas, int idPartida, ListBox lstCartas)
+        public panelCarta(string[] cartas, int idPartida, ListBox lstCartas,List<int> ids)
         {
             Cartas = cartas;
             IdPartida = idPartida;
+            IdJogadores = ids;
             InitializeComponent();
+
+            int qtdJogadores = QtdJogadores(ids);
+
+            Partida = new Partida(cartas,qtdJogadores,IdJogadores,this);
+
             CartasLog(lstCartas);
-            ExibirMao();
+            //ExibirMao();
         }
 
         public void CartasLog(ListBox lstCartas)
@@ -38,6 +47,19 @@ namespace SistemaPI
             this.lstCartas.Top = 100;
             this.lstCartas.Visible = true;
             this.Controls.Add(lstCartas);
+        }
+
+        public int QtdJogadores(List<int> jogadores)
+        {
+            if(jogadores.Count == 2)
+            {
+                return 2;
+            }
+            if(jogadores.Count == 4)
+            {
+                return 4;
+            }
+            return -1;
         }
 
         public void ListarMao()
@@ -65,7 +87,6 @@ namespace SistemaPI
             txtIdCarta.Text = retorno;
             txtIdCarta.Visible = true;
             ListarMao();
-            ExibirMao();
             ExibirJogada();
         }
 
@@ -98,6 +119,7 @@ namespace SistemaPI
             string[] listaJ = listaDeJogadores.Split('\n');
             return listaJ.Length;
         }
+
         public void ExibirJogada()
         {
             string retorno = Jogo.ExibirJogadas(IdPartida);
@@ -152,6 +174,7 @@ namespace SistemaPI
             }
         }
 
+        /*
         public void ExibirMao()
         {
             AtualizarP();
@@ -202,6 +225,7 @@ namespace SistemaPI
                 x += 49;
             }
         }
+        */
 
     }
 }
