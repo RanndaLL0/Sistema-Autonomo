@@ -34,10 +34,9 @@ namespace SistemaPI
 
             int qtdJogadores = QtdJogadores(ids);
 
-            Partida = new Partida(cartas,qtdJogadores,IdJogadores,this);
+            Partida = new Partida(cartas,qtdJogadores,IdPartida,IdJogadores,this);
 
             CartasLog(lstCartas);
-            //ExibirMao();
         }
 
         public void CartasLog(ListBox lstCartas)
@@ -107,19 +106,6 @@ namespace SistemaPI
             }
         }
 
-        public int Njogadores()
-        {
-            string listaDeJogadores = Jogo.ListarJogadores(IdPartida);
-
-            listaDeJogadores = listaDeJogadores.Replace("\r", "");
-            if (listaDeJogadores.Length > 0)
-            {
-                listaDeJogadores = listaDeJogadores.Substring(0, listaDeJogadores.Length - 1);
-            }
-            string[] listaJ = listaDeJogadores.Split('\n');
-            return listaJ.Length;
-        }
-
         public void ExibirJogada()
         {
             string retorno = Jogo.ExibirJogadas(IdPartida);
@@ -162,70 +148,5 @@ namespace SistemaPI
                 x += 100;
             }
         }
-
-        public void AtualizarP()
-        {
-            List<Control> controls = new List<Control>();
-
-            foreach(Control c in controls)
-            {
-                Controls.Remove(c);
-                c.Dispose();
-            }
-        }
-
-        /*
-        public void ExibirMao()
-        {
-            AtualizarP();
-            foreach(Control c in Controls)
-            {
-                if(c is Panel)
-                {
-                        Controls.Remove(c);
-                        c.Dispose();
-                }
-            }
-
-            int nJogadores = Njogadores();
-
-            //Posição inicial das cartas
-            int x = 1050;
-            int y = 550;
-            int count = 0;
-            for(int i = 0; i < Cartas.Length - 1; i++)
-            {
-                Panel carta = new Panel();
-                string[] auxCarta = Cartas[i].ToString().Split(',');
-                
-                if(nJogadores == 2 && count == 6)
-                {
-                    x = 1050;
-                    y = 610;
-                }
-                else if(nJogadores == 2 && count == 12)
-                {
-                    x = 1050;
-                    y = 380;
-                }
-                else if(nJogadores == 2 && count == 18)
-                {
-                    x = 1050;
-                    y = 440;
-                }
-                imgCarta(carta, auxCarta[2]);
-                carta.Height = 55;
-                carta.Width = 44;
-                carta.Left = x;
-                carta.Top = y;
-
-                count++;
-                carta.BackgroundImageLayout = ImageLayout.Stretch;
-                this.Controls.Add(carta);
-                x += 49;
-            }
-        }
-        */
-
     }
 }

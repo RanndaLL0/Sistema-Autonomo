@@ -7,26 +7,33 @@ using System.Windows.Forms;
 using System.Drawing;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 using System.Security.Cryptography;
+using MagicTrickServer;
 
 namespace SistemaPI.Entidades
 {
     public class Partida
     {
+        public Form Mesa { get; set; }
         public int NJogadores { get; set; }
         public string[] Cartas { get; set; }
         public List<int> IdJogadores { get; set; }
+        public int IdPartida { get; set; }
 
         List<Jogador> Jogadores = new List<Jogador>();
 
-        public Partida(string[] cartas, int qtdJogadores, List<int> idJogadores,Form mesa)
+        public Partida(string[] cartas, int qtdJogadores,int idPartida, List<int> idJogadores,Form mesa)
         {
             IdJogadores = idJogadores;
             Cartas = cartas;
             NJogadores = qtdJogadores;
+            IdPartida = idPartida;
+            Form Mesa = mesa;
             IniciarJogador();
             AdicionarCartas2();
-            ExibirMao(mesa);
+            ExibirMao(Mesa);
         }
+
+#pragma
 
         public void IniciarJogador()
         {
@@ -235,14 +242,14 @@ namespace SistemaPI.Entidades
 
         public void ExibirMao(Form mesa)
         {
-            foreach(Jogador j in Jogadores)
+            foreach (Jogador j in Jogadores)
             {
-                foreach(Panel p in j.Cartas.Keys)
+                foreach (Panel p in j.Cartas.Keys)
                 {
                     mesa.Controls.Add(p);
                 }
             }
         }
-        
+
     }
 }

@@ -173,37 +173,6 @@ namespace SistemaPI
             IniciarJogo();
         }
 
-
-        public void ListarMao()
-        {
-            lstCartas.Items.Clear();
-            int idPartida = int.Parse(txtID.Text);
-            string retorno = Jogo.ConsultarMao(idPartida);
-            retorno = retorno.Replace("\r", "");
-            string[] cartas = retorno.Split('\n');
-
-            for (int i = 0; i < cartas.Length; i++)
-            {
-                lstCartas.Items.Add(cartas[i]);
-            }
-            M.Cartas = cartas;
-        }
-
-        private void btnJogarCarta_Click(object sender, EventArgs e)
-        {
-
-            string retorno = Jogo.Jogar(int.Parse(txtidJogador.Text), txtsenhaJogador.Text, int.Parse(txtIdCarta.Text));
-            if (retorno.Length > 4 && retorno.Substring(0,4) == "ERRO")
-            {
-                MessageBox.Show("Ocorreu um erro: Valores invalidos para jogar uma carta", "Valor Invalido", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            lblValorCartaJogada.Text = retorno;
-            lblValorCartaJogada.Visible = true;   
-            ListarMao();
-            M.ExibirJogada();
-        }
-
         private void btnApostar_Click(object sender, EventArgs e)
         {
             if (txtIdCarta.Text == "")

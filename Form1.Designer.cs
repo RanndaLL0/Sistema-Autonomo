@@ -59,7 +59,6 @@
             this.lstCartas = new System.Windows.Forms.ListBox();
             this.txtIdCarta = new System.Windows.Forms.TextBox();
             this.lblCartaID = new System.Windows.Forms.Label();
-            this.btnJogarCarta = new System.Windows.Forms.Button();
             this.btnApostar = new System.Windows.Forms.Button();
             this.lblCartaJogada = new System.Windows.Forms.Label();
             this.lblValorCartaJogada = new System.Windows.Forms.Label();
@@ -366,16 +365,6 @@
             this.lblCartaID.TabIndex = 38;
             this.lblCartaID.Text = "Id da Carta";
             // 
-            // btnJogarCarta
-            // 
-            this.btnJogarCarta.Location = new System.Drawing.Point(263, 395);
-            this.btnJogarCarta.Name = "btnJogarCarta";
-            this.btnJogarCarta.Size = new System.Drawing.Size(58, 24);
-            this.btnJogarCarta.TabIndex = 39;
-            this.btnJogarCarta.Text = "Jogar";
-            this.btnJogarCarta.UseVisualStyleBackColor = true;
-            this.btnJogarCarta.Click += new System.EventHandler(this.btnJogarCarta_Click);
-            // 
             // btnApostar
             // 
             this.btnApostar.Location = new System.Drawing.Point(340, 394);
@@ -448,7 +437,6 @@
             this.Controls.Add(this.lblValorCartaJogada);
             this.Controls.Add(this.lblCartaJogada);
             this.Controls.Add(this.btnApostar);
-            this.Controls.Add(this.btnJogarCarta);
             this.Controls.Add(this.lblCartaID);
             this.Controls.Add(this.txtIdCarta);
             this.Controls.Add(this.lstCartas);
@@ -520,7 +508,6 @@
         private System.Windows.Forms.ListBox lstCartas;
         private System.Windows.Forms.TextBox txtIdCarta;
         private System.Windows.Forms.Label lblCartaID;
-        private System.Windows.Forms.Button btnJogarCarta;
         private System.Windows.Forms.Button btnApostar;
         private System.Windows.Forms.Label lblCartaJogada;
         private System.Windows.Forms.Label lblValorCartaJogada;
